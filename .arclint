@@ -1,0 +1,12 @@
+{
+  "linters": {
+    "ruby": {
+      "type": "ruby",
+      "include": "(\\.rb$)"
+    },
+    "rubocop": {
+     "type": "rubocop",
+      "include": "(\\.rb$)"
+    }
+  }
+}
