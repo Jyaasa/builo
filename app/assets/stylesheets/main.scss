@@ -1,8 +1,5 @@
-.l-header{
-
-}
-
 .container{
-  width: 1170px;
+  width: $max-width;
   margin: 0 auto;
+  @include clearfix;
 }

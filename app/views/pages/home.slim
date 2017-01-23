@@ -1,7 +1,19 @@
-section.l-header
-  header.container
-    .logo
-      =image_tag "logo.png"
-      span
-        ビルオ        
-  section 
+section.hero
+  section.l-header.container
+    header
+      .logo
+        =image_tag "logo.png"
+        strong ビルオ     
+      nav.nav
+        ul
+          li 
+            =link_to "さがす", "#"
+          li 
+            =link_to "ここから開始", "#"
+          li 
+            =link_to "ヘルプ", "#"
+          li 
+            =link_to "登録する", "#"
+          li 
+            =link_to "ログイン", "#"
+    section 

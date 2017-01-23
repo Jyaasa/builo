@@ -1,0 +1,32 @@
+.l-header{
+  .logo{
+    @include span-columns(2);
+    img{
+      @include size(4em);
+    }
+    strong{
+      font-size: em(32);
+      line-height: $base-line-height;
+      @include inline-block;
+      color: #3E3E3E;
+      vertical-align: top;
+    }
+  }
+  .nav{
+    @include span-columns(10);
+    li{
+      @include inline-block;
+      @include margin(1em 4em null 4em);
+    }
+    li:first-child{
+      @include margin(null 8em null 3em);
+    }
+    li:last-child{
+      @include margin(null 0em null null);
+    }
+    a{
+      color: $nav-color;
+      font-size: em(18);
+    }
+  }
+}
