@@ -197,7 +197,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bourbon
+  bourbon (~> 4.2.7)
   byebug
   capistrano (= 3.5.0)
   capistrano-bundler (~> 1.1.4)
