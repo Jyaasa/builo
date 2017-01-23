@@ -19,6 +19,7 @@
 
 /tmp
 /config/database.yml
+/config/secrets.yml
 /db/schema.rb
 
 # Ignore Byebug command history file.
