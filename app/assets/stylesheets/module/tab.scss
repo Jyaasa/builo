@@ -1,0 +1,82 @@
+.accordion-tabs {
+  @include clearfix;
+  line-height: 1.5;
+  margin-bottom: $base-spacing;
+  padding: 0;
+
+  @include media(max-width $tab-mode) {
+    border: $tab-border;
+  }
+
+  .tab-header-and-content {
+    list-style: none;
+    &:first-child{
+        @include margin(null null null 40px);
+      }
+    @include media($tab-mode) {
+      display: inline;
+    }
+
+    &:first-child .tab-link {
+      @include media(max-width $tab-mode) {
+        border-top: 0;
+      }
+    }
+  }
+
+  .tab-link {
+    background-color: $tab-inactive-color;
+    border-top: $tab-border;
+    color:   $white;
+    display: block;
+    font-weight: bold;
+    padding: ($base-spacing / 2) ($gutter / 1.5);
+    text-decoration: none;
+
+    @include media($tab-mode) {
+      border-top: 0;
+      display: inline-block;
+    }
+
+    &:hover {
+      color: #4B4B4B;
+    }
+
+    &:focus {
+      outline: none;
+      color: #fff;
+    }
+
+    &.is-active {
+      background-color: $tab-active-background;
+
+      @include media($tab-mode) {
+        background-color: $tab-active-background;
+        border: $tab-border;
+        border-bottom-color: $tab-active-background;
+        margin-bottom: -1px;
+      }
+    }
+  }
+
+  .tab-content {
+    background: $tab-content-background;
+    display: none;
+    padding: $base-spacing $gutter;
+    width: 100%;
+    li{
+      @include display(inline-block);
+      border-right: 2px solid #fff;
+      @include padding(0 20px);
+      line-height: 20px;
+    a{
+      color: #FFFFFF;
+      }
+    }
+
+    @include media($tab-mode) {
+      border: $tab-border;
+      float: left;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.l-banner
+  .title{
+    text-align: right;
+    h1{
+      font-size: rem(100);
+      @include margin(rem(20) null null null);
+    }
+    h2{
+      font-size: rem(90);
+    }
+  }
+  .search
+    h2{
+      font-size: rem(120px);
+      text-shadow: 1px 1px 1px #fff;
+    }

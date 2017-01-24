@@ -1,5 +1,35 @@
+html,body{
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+
+  @media #{$mq-medium} {
+    font-size: $base-font-size*1.4;
+    line-height: $base-line-height*1.4;
+  }
+
+  @media #{$mq-large} {
+    font-size: $base-font-size*1.5;
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: $base-font-size*1.6;
+  }
+
+  @media #{$mq-xxlarge} {
+    font-size: $base-font-size*1.8;
+  }
+}
+
 .container{
-  width: $max-width;
-  margin: 0 auto;
+  @include outer-container($max-width);
   @include clearfix;
+}
+.hero{
+  background:  asset-url('banner.png') center center no-repeat;
+  background-size: cover;
+  @include size(100% 80rem);
 }

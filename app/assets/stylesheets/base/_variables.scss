@@ -16,7 +16,7 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #1565c0;
+$blue: #1565c0; 
 $dark-gray: #3E3E3E;
 $medium-gray: #999;
 $light-gray: #ddd;
@@ -41,3 +41,48 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+//container width
+$max-width: 1920px !default;
+  
+
+// Breakpoints
+$bp-small: 48em; // 768px
+$bp-medium: 64em; // 1024px
+$bp-large: 85.375em; // 1366px
+$bp-xlarge: 120em; // 1920px
+$bp-xxlarge: 160em; // 2560px
+
+// Media Queries
+$mq-small: "(min-width: #{$bp-small})";
+$mq-medium: "(min-width: #{$bp-medium})";
+$mq-large: "(min-width: #{$bp-large})";
+$mq-xlarge: "(min-width: #{$bp-xlarge})";
+$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
+$mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+
+//header
+$action-color: #477DCA !default;
+$dark-gray: #333 !default;
+$large-screen: 767px !default;
+$navigation-padding: 3em;
+$navigation-background: transparent;
+$navigation-color: $nav-color;
+$navigation-color-hover: #555;
+$navigation-height: 90px;
+$navigation-submenu-padding: 1em;
+$navigation-submenu-width: 12em;
+$horizontal-bar-mode: $large-screen;
+
+$base-border-color: #4B4B4B !default;
+$base-background-color: #4B4B4B !default;
+$base-spacing: 4em !default;
+$white: #fff !default;
+$light-gray: #ddd !default;
+$medium-screen: 40em !default;
+$tab-border: 1px solid #4B4B4B;
+$tab-content-background: #4B4B4B;
+$tab-active-background: $tab-content-background;
+$tab-inactive-color: #9D9D9D;
+$tab-inactive-hover-color: darken($light-gray, 5);
+$tab-mode: $medium-screen;

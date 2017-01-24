@@ -1,0 +1,41 @@
+.top-search{
+  @include size(100% em(54));
+  background: #3E3E3E;
+}
+.l-banner
+  .search{
+    @include margin(0 auto);
+    @include size( 90% auto);
+    h2{
+      @include margin(null null 20px 160px);
+    }
+  .form{
+    &--field{
+      @include padding(0 em(20));
+      @include inline-block;
+      &__text{
+        @include size(rem(600) 99px);
+        @include border-color(#95989A);
+        border-radius: none;
+      }
+    }
+    &--action{
+      @include padding(null null null 80px);
+      @include inline-block;
+      .btn{
+        &--primary{
+          background: #F99500;
+          border: 1px solid #95989A;
+          @include size (240px 106px);
+          @include border-top-radius(25px);
+          @include border-right-radius(25px);
+          @include border-bottom-radius(25px);
+          @include border-left-radius(25px);
+          font-size: rem(60);
+          color: #3E3E3E;
+          line-height: 0;
+        }
+      }
+    }
+  }
+}
