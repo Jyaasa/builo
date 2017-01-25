@@ -25,23 +25,75 @@ body {
 }
 
 .container{
-  @include outer-container;
+  @include outer-container;  
 }
 .hero{
   background:  asset-url('banner.png') center center no-repeat;
   background-size: cover;
-  @include size(100% rem(1080));
+  @include size(100% vh(1080));
+  @include media($bp-xlarge){
+    @include size(100% 45em);
+  }
+  @include media(max-width $bp-xlarge){
+    @include size(100% 40em);
+  }
+  @include media(max-width $bp-large){
+    @include size(100% 35em);
+  }
+  @include media(max-width $bp-medium){
+    @include size(100% 37em);
+  }  
+  @include media(max-width $bp-small){
+    @include size(100% 35em);
+  }    
+
 }
 .category{
   @include position(relative, null);
   @include size(100% rem(257));
+  @include margin(-80px 0 0 0);
 }
-.companies{
-  background: #9D9D9D;
-  li{
-    @include span-columns(3);
-    @include media($bp-large){
-       @include span-columns(3)
+
+.marekting-info{
+  text-align: center;
+  @include pad(3em 0);
+  h1{
+    font-size: 66px;
+    font-weight: normal;
+    line-height: 100px;
+    color: #4B4B4B;
+    @include media(max-width $bp-medium){
+      font-size: 40px;
+      line-height: 60px;
+    }
+    @include media(max-width $bp-medium){
+      font-size: 32px;
+      line-height: 50px;
     }
   }
 }
+.process{
+  background: #9D9D9D;
+  @include pad(3em 15px);
+  h3{
+    color: #fff;
+    font-size: rem(32);
+    font-weight: normal;
+  }
+  &--list{
+    text-align: center;
+    @include span-columns(4);
+    h5{
+      font-size: 50px;
+      color: #fff;
+      font-weight: normal;
+      @include media(max-width $bp-large){
+        font-size: 44px;
+      }      
+      @include media(max-width $bp-medium){
+        font-size: 32px;
+      }
+    }
+  }
+}
+

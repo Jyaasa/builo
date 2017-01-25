@@ -5,6 +5,12 @@
     font-size: rem(45);
     font-weight: normal;
     color: #4B4B4B;
+    @include media(max-width $bp-large){
+      font-size: rem(28);
+    }
+    @include media(max-width $bp-medium){
+      font-size: rem(18);
+    }    
   }
   &--lists{
     @include row();
@@ -14,13 +20,60 @@
     text-align: center;
     h3{
       font-size: rem(50);
+      @include media(max-width $bp-large){
+        font-size: rem(32);
+      }
+      @include media(max-width $bp-medium){
+        font-size: rem(24);
+      }      
     }
     p{
       color: #9D9D9D;
       line-height: 25px;
-      width: 385px;
+      max-width: 385px;
       font-size: 25px;
       margin: 0 auto;
+      @include media(max-width $bp-medium){
+        font-size: rem(18);
+      }         
+    }
+  }
+}
+
+.companies{
+  background: #9D9D9D;
+  @include pad (2em 14px);
+  h4{
+    color: #fff;
+    font-size: rem(32);
+    font-weight: normal;
+  }
+  ul{
+    @include outer-container;
+  }
+  li.block{
+    @include span-columns(2);
+    @include omega(6n);
+    @include media(max-width $bp-large){
+      @include span-columns(4);
+      @include omega(3n);
+    }
+    @include media(max-width $bp-small){
+      @include span-columns(6);
+      @include omega(2n);
+    }
+    img{
+      width: 100%;
+    }
+    h5 {
+      color: #fff;
+      font-weight: normal;
+    }
+  }
+  .more{
+    text-align: right;
+    a{
+      color: #fff;
     }
   }
 }

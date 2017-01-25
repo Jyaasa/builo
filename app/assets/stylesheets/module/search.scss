@@ -6,34 +6,56 @@
   .search{
     @include margin(0 auto);
     @include size( 90% auto);
+    @include media(max-width $bp-medium){
+      @include size(100% auto);
+    }
     h2{
       @include margin(null null 20px 160px);
     }
   .form{
     &--field{
-      @include padding(0 em(20));
+      @include padding(0 2%);
       @include inline-block;
+      width: 40%;
       &__text{
-        @include size(rem(600) 99px);
+        @include size (100% 99px);
         @include border-color(#95989A);
-        border-radius: none;
+        @include media(max-width $bp-large){
+          @include size(100% 70px);
+        }
+        @include media(max-width $bp-medium){
+          @include size(100% 60px);
+        }
+        @include media(max-width $bp-small){
+          @include size(100% 50px);
+        }        
       }
     }
     &--action{
-      @include padding(null null null 80px);
       @include inline-block;
+      @include padding(0 0 0 2%);
       .btn{
         &--primary{
-          background: #F99500;
-          border: 1px solid #95989A;
-          @include size (240px 106px);
+          @include size (auto 100px);
           @include border-top-radius(25px);
           @include border-right-radius(25px);
           @include border-bottom-radius(25px);
           @include border-left-radius(25px);
           font-size: rem(60);
-          color: #3E3E3E;
           line-height: 0;
+          padding: 20px 40px !important;
+          @include media(max-width $bp-large){
+            @include size (auto 70px);
+            font-size: rem(40);
+          }
+          @include media(max-width $bp-medium){
+            @include size(100% 60px);
+            padding: 15px 24px !important;
+            font-size: rem(30);
+          }
+          @include media(max-width $bp-small){
+            @include size(100% 40px);
+          }           
         }
       }
     }
