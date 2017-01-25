@@ -1,0 +1,20 @@
+section.container
+  header.navigation role="banner" 
+    .navigation-wrapper
+      .logo
+        =image_tag "logo.png"
+      ul.left-menu
+        li
+          =link_to "さがす", "#"
+      a#js-mobile-menu.navigation-menu-button href="javascript:void(0)"  MENU
+      nav role="navigation" 
+        ul#js-navigation-menu.navigation-menu.show
+          li.nav-link
+            =link_to "ここから開始", "#"
+          li.nav-link
+            =link_to "ヘルプ", "#"
+          li.nav-link
+            =link_to "登録する", "#"
+          li.nav-link
+            =link_to "ログイン", "#"
+section.top-search

@@ -4,4 +4,6 @@ class PagesController < ApplicationController
 
   def categories
   end
+
+  def search; end
 end

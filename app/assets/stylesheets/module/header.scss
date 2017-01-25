@@ -79,6 +79,11 @@ header.navigation {
       margin: 0;
       padding: 0;
     }
+    @include media(max-width $bp-small){
+      @include position(absolute, 90px 0 null null);
+      @include size(200px auto);
+      background: #fafafa;
+    }
   }
   .left-menu{
     float: left;
