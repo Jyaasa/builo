@@ -1,0 +1,26 @@
+.company-trust{
+  @include padding(2em  3em);
+
+  &--title{
+    font-size: rem(45);
+    font-weight: normal;
+    color: #4B4B4B;
+  }
+  &--lists{
+    @include row();
+  }  
+  &--list{
+    @include span-columns(4);
+    text-align: center;
+    h3{
+      font-size: rem(50);
+    }
+    p{
+      color: #9D9D9D;
+      line-height: 25px;
+      width: 385px;
+      font-size: 25px;
+      margin: 0 auto;
+    }
+  }
+}

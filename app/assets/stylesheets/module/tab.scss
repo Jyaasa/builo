@@ -64,11 +64,14 @@
     display: none;
     padding: $base-spacing $gutter;
     width: 100%;
+    @include position(absolute, null 0 null 0em);
+    @include size(auto rem(180));
     li{
       @include display(inline-block);
       border-right: 2px solid #fff;
       @include padding(0 20px);
       line-height: 20px;
+
     a{
       color: #FFFFFF;
       }
