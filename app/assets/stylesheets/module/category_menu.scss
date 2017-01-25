@@ -1,0 +1,20 @@
+.categories{
+  margin-top: 40px;
+}
+.menu-container{
+  background: #f8f8f8;
+  // @include margin(1em null);
+  @include border-top-radius(25px);
+  @include border-right-radius(25px);
+  @include border-bottom-radius(25px);
+  @include border-left-radius(25px);
+  border: 1px solid $base-border-color;
+  @include padding(1em);
+
+}
+.category-menu{
+  li{
+    @include padding(null 1em);
+    @include inline-block;
+  }
+}
