@@ -110,6 +110,8 @@ body {
     }
   }
 }
+
+//category
 section.category--list{
   @include margin(null null em(30) null);
   h2{
@@ -120,6 +122,7 @@ section.category--list{
     @include span-columns(6 of 12);
     @include media(max-width $bp-small){
       @include  span-columns(12);
+      margin-bottom: 40px;
     }
   }
   section.category-right{
@@ -142,5 +145,11 @@ section.category--list{
 .categories-company-trust{
   h3.company-trust--title {
     text-align: center;
+  }
+  .company-trust--list{
+     @include media(max-width $bp-small){
+      @include  span-columns(12);
+      @include margin(1em null);
+    }
   }
 }
