@@ -6,4 +6,6 @@ class PagesController < ApplicationController
   end
 
   def search; end
+
+  def show; end
 end
