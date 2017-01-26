@@ -2,45 +2,31 @@
   .title{
     text-align: right;
     h1{
-      font-size: rem(100);
+      font-size: em(100);
+      line-height: 124px;
       @include margin(rem(20) null null null);
       @include media($bp-large){
-        font-size: rem(80);
+        font-size: 100px;
       }
       @include media(max-width $bp-large){
         font-size: rem(60);
+        line-height: 70px;
       }
       @include media(max-width $bp-medium){
         font-size: rem(40);
+        line-height: 55px;
       }
       @include media(max-width $bp-small){
         font-size: rem(32);
+        line-height: 40px;
       }       
-    }
-    
-    h2{
-      font-size: rem(90);
-      @include media($bp-large){
-        font-size: rem(80);
-      }
-      @include media(max-width $bp-large){
-        font-size: rem(60);
-      }
-      @include media(max-width $bp-medium){
-        font-size: rem(30);
-      }      
-      @include media(max-width $bp-small){
-        font-size: rem(28);
-      }      
     }
   }
   .search
     h2{
-      font-size: rem(120px);
-      text-shadow: 1px 1px 1px #fff;
-      @include media($bp-large){
-        font-size: rem(80);
-      }
+      font-size: 120px;
+      font-weight: normal;
+      text-shadow: 1px 1px 0px #fff, -1px -1px 0px #fff;
       @include media(max-width $bp-large){
         font-size: rem(60);
       }
