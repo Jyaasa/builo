@@ -114,7 +114,7 @@ body {
 //category
 section.category--list{
   @include margin(null null em(30) null);
-  h2{
+  h1{
     color: $action-color;
   }
   @include margin(3em null);
@@ -152,4 +152,8 @@ section.category--list{
       @include margin(1em null);
     }
   }
+}
+
+.padder-l-r{
+  @include padding(null 75px null 75px);
 }

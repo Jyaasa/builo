@@ -4,10 +4,10 @@
 .menu-container{
   background: #f8f8f8;
   // @include margin(1em null);
-  @include border-top-radius(25px);
-  @include border-right-radius(25px);
-  @include border-bottom-radius(25px);
-  @include border-left-radius(25px);
+  @include border-top-radius(37px);
+  @include border-right-radius(37px);
+  @include border-bottom-radius(37px);
+  @include border-left-radius(37px);
   border: 1px solid $base-border-color;
   @include padding(1em);
 
@@ -17,4 +17,22 @@
     @include padding(null 1em);
     @include inline-block;
   }
+}
+.link-list{
+  li{
+    a{
+      font-size: 32px;
+    }
+  }
+}
+.search--form{
+  .form--action{
+    .btn--primary{
+      padding: 0px;
+      font-weight: bold;
+      border: 1px solid $border-color !important;
+      width: 4.25em !important;
+    }
+  }
+
 }
