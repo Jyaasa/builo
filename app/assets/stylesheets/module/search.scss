@@ -46,7 +46,7 @@
           @include border-left-radius(25px);
           font-size: rem(60);
           line-height: 0;
-          padding: 20px 40px !important;
+          padding: 0 40px;
           @include media(max-width $bp-large){
             @include size (auto 70px);
             font-size: rem(40);

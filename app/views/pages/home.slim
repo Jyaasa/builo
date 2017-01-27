@@ -6,7 +6,7 @@ section.hero
           =image_tag "logo.png"
         ul.left-menu
           li
-            =link_to "さがす", "#"
+            =link_to "さがす", categories_path
         a#js-mobile-menu.navigation-menu-button href="javascript:void(0)"  MENU
         nav role="navigation" 
           ul#js-navigation-menu.navigation-menu.show
@@ -38,133 +38,136 @@ section.hero
           .form--action
             button.btn.btn--primary 探す
 section.category
-  ul.accordion-tabs
-    li.tab-header-and-content
-      a.is-active.tab-link href="javascript:void(0)"  電気設備
-      .tab-content
-        ul.container
-          li
-            =link_to "照明設備工事", "#"
-          li
-            =link_to "高圧電気設備点検 修繕工事", "#"
-          li
-            =link_to "電話工事", "#"
-          li
-            =link_to "太陽光発電工事", "#"
-          li
-            =link_to "省エネソリューション", "#"
-    li.tab-header-and-content
-      a.tab-link href="#"  水道空調衛生
-      .tab-content
-        ul.container
-          li
-            =link_to "照明設備工事", "#"
-          li
-            =link_to "高圧電気設備点検 修繕工事", "#"
-          li
-            =link_to "電話工事", "#"
-          li
-            =link_to "太陽光発電工事", "#"
-          li
-            =link_to "省エネソリューション", "#"
-    li.tab-header-and-content
-      a.tab-link href="#"  防災・防犯
-      .tab-content
-        ul.container
-          li
-            =link_to "照明設備工事", "#"
-          li
-            =link_to "高圧電気設備点検 修繕工事", "#"
-          li
-            =link_to "電話工事", "#"
-          li
-            =link_to "太陽光発電工事", "#"
-          li
-            =link_to "省エネソリューション", "#"
-    li.tab-header-and-content
-      a.tab-link href="#" エレベータ 他
-      .tab-content
-        ul.container
-          li
-            =link_to "照明設備工事", "#"
-          li
-            =link_to "高圧電気設備点検 修繕工事", "#"
-          li
-            =link_to "電話工事", "#"
-          li
-            =link_to "太陽光発電工事", "#"
-          li
-            =link_to "省エネソリューション", "#"
-    li.tab-header-and-content
-      a.tab-link href="#" 屋上防水・建物
-      .tab-content
-        ul.container
-          li
-            =link_to "照明設備工事", "#"
-          li
-            =link_to "高圧電気設備点検 修繕工事", "#"
-          li
-            =link_to "電話工事", "#"
-          li
-            =link_to "太陽光発電工事", "#"
-          li
-            =link_to "省エネソリューション", "#"
-    li.tab-header-and-content
-      a.tab-link href="#" 内装
-      .tab-content
-        ul.container
-          li
-            =link_to "照明設備工事", "#"
-          li
-            =link_to "高圧電気設備点検 修繕工事", "#"
-          li
-            =link_to "電話工事", "#"
-          li
-            =link_to "太陽光発電工事", "#"
-          li
-            =link_to "省エネソリューション", "#"
-    li.tab-header-and-content
-      a.tab-link href="#" 建物管理
-      .tab-content
-        ul.container
-          li
-            =link_to "照明設備工事", "#"
-          li
-            =link_to "高圧電気設備点検 修繕工事", "#"
-          li
-            =link_to "電話工事", "#"
-          li
-            =link_to "太陽光発電工事", "#"
-          li
-            =link_to "省エネソリューション", "#"
-    li.tab-header-and-content
-      a.tab-link href="#" 専門
-      .tab-content
-        ul
-          li
-            =link_to "照明設備工事", "#"
-          li
-            =link_to "高圧電気設備点検 修繕工事", "#"
-          li
-            =link_to "電話工事", "#"
-          li
-            =link_to "太陽光発電工事", "#"
-          li
-            =link_to "省エネソリューション", "#"
-    li.tab-header-and-content
-      a.tab-link href="#" 総合ソリューション
-      .tab-content.container
-        ul
-          li
-            =link_to "照明設備工事", "#"
-          li
-            =link_to "高圧電気設備点検 修繕工事", "#"
-          li
-            =link_to "電話工事", "#"
-          li
-            =link_to "太陽光発電工事", "#"
-          li
-            =link_to "省エネソリューション", "#"          
+  .container
+    ul.accordion-tabs
+      li.tab-header-and-content
+        a.is-active.tab-link href="javascript:void(0)"  電気設備
+        .tab-content
+          ul.container
+            li
+              =link_to "照明設備工事", "#"
+            li
+              =link_to "高圧電気設備点検 修繕工事", "#"
+            li
+              =link_to "電話工事", "#"
+            li
+              =link_to "太陽光発電工事", "#"
+            li
+              =link_to "省エネソリューション", "#"
+      li.tab-header-and-content
+        a.tab-link href="#"  水道空調衛生
+        .tab-content
+          ul.container
+            li
+              =link_to "照明設備工事", "#"
+            li
+              =link_to "高圧電気設備点検 修繕工事", "#"
+            li
+              =link_to "電話工事", "#"
+            li
+              =link_to "太陽光発電工事", "#"
+            li
+              =link_to "省エネソリューション", "#"
+      li.tab-header-and-content
+        a.tab-link href="#"  防災・防犯
+        .tab-content
+          ul.container
+            li
+              =link_to "照明設備工事", "#"
+            li
+              =link_to "高圧電気設備点検 修繕工事", "#"
+            li
+              =link_to "電話工事", "#"
+            li
+              =link_to "太陽光発電工事", "#"
+            li
+              =link_to "省エネソリューション", "#"
+      li.tab-header-and-content
+        a.tab-link href="#" エレベータ 他
+        .tab-content
+          ul.container
+            li
+              =link_to "照明設備工事", "#"
+            li
+              =link_to "高圧電気設備点検 修繕工事", "#"
+            li
+              =link_to "電話工事", "#"
+            li
+              =link_to "太陽光発電工事", "#"
+            li
+              =link_to "省エネソリューション", "#"
+      li.tab-header-and-content
+        a.tab-link href="#" 屋上防水・建物
+        .tab-content
+          ul.container
+            li
+              =link_to "照明設備工事", "#"
+            li
+              =link_to "高圧電気設備点検 修繕工事", "#"
+            li
+              =link_to "電話工事", "#"
+            li
+              =link_to "太陽光発電工事", "#"
+            li
+              =link_to "省エネソリューション", "#"
+      li.tab-header-and-content
+        a.tab-link href="#" 内装
+        .tab-content
+          ul.container
+            li
+              =link_to "照明設備工事", "#"
+            li
+              =link_to "高圧電気設備点検 修繕工事", "#"
+            li
+              =link_to "電話工事", "#"
+            li
+              =link_to "太陽光発電工事", "#"
+            li
+              =link_to "省エネソリューション", "#"
+      li.tab-header-and-content
+        a.tab-link href="#" 建物管理
+        .tab-content
+          ul.container
+            li
+              =link_to "照明設備工事", "#"
+            li
+              =link_to "高圧電気設備点検 修繕工事", "#"
+            li
+              =link_to "電話工事", "#"
+            li
+              =link_to "太陽光発電工事", "#"
+            li
+              =link_to "省エネソリューション", "#"
+      li.tab-header-and-content
+        a.tab-link href="#" 専門
+        .tab-content
+          ul
+            li
+              =link_to "照明設備工事", "#"
+            li
+              =link_to "高圧電気設備点検 修繕工事", "#"
+            li
+              =link_to "電話工事", "#"
+            li
+              =link_to "太陽光発電工事", "#"
+            li
+              =link_to "省エネソリューション", "#"
+      li.tab-header-and-content
+        a.tab-link href="#" 総合ソリューション
+        .tab-content.container
+          ul
+            li
+              =link_to "照明設備工事", "#"
+            li
+              =link_to "高圧電気設備点検 修繕工事", "#"
+            li
+              =link_to "電話工事", "#"
+            li
+              =link_to "太陽光発電工事", "#"
+            li
+              =link_to "省エネソリューション", "#"          
+    .more
+      =link_to "もっと見る", categories_path
 section.company-trust
   .container
     h3.company-trust--title

@@ -1,3 +1,11 @@
+.category{
+  .more{
+    @include position(absolute, null 40px 20px null);
+    a{
+      color: #fff;
+    }
+  }
+}
 .accordion-tabs {
   @include clearfix;
   line-height: 1.5;
