@@ -1,0 +1,16 @@
+.filter{
+  @include outer-container;
+  @include background($container-background-color);
+  border-radius: 37px;
+  padding: 5px 40px;
+  border: 1px solid $border-color;
+    @include span-columns(12);
+    &--title{
+      font-size: 30px;
+      font-weight: bold;
+      &__plus{
+        float: right;
+      }
+  }
+  margin-bottom: 40px;
+}

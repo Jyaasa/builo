@@ -18,17 +18,8 @@ section
               =link_to "登録する", "#"
             li.nav-link
               =link_to "ログイン", "#"
-  section.top-search
-    .search.container
-      .search--form.form
-        form action=""
-          .form--field
-            input type="text" class= "form--field__text"
-          .form--field
-            input type="text" class= "form--field__text"
-          .form--action
-            button.btn.btn--primary 探す
-  section.categories.container.padder-l-r
+  = render 'shared/search-bar'
+  section.categories.container
     h2
       | 専門業者のご紹介
     section.menu-container
@@ -189,26 +180,4 @@ section
             = link_to "貯水槽清掃点検", "#"
         h1
           | 総合ソリューション
-  section.company-trust
-  .container.categories-company-trust
-    h3.company-trust--title
-      | すべて信頼３条件を満たした信頼できる専門業者です。安心してお問い合わできます
-    .company-trust--lists
-      .company-trust--list
-        =image_tag "user-group.png", class: ''
-        h3
-          |ビル・マンション
-          br/
-          |での豊富な実績
-      .company-trust--list
-        =image_tag "user-group.png", class: ''
-        h3
-          |オーナーからの
-          br/
-          |推薦.紹介
-      .company-trust--list
-        =image_tag "user-group.png", class: ''
-        h3
-          |アフター
-          br/
-          |サポート体制
+  = render 'shared/conditions'

@@ -6,13 +6,14 @@
         @include padding(null null null em(15));
       }
       &--field{
-        @include padding(em(10) em(20) null);
+        @include padding(em(14) null em(10) em(10));
         @include media(max-width $bp-small){
           @include padding(em(10) em(10) null);
         }
         @include inline-block;
         &__text{
-          @include size(13em 2em);
+          @include size(13em 2.6em);
+          margin-bottom: 0px;
           @include media(max-width $bp-small){
             @include size(10em/1.2 2em);
           }
@@ -21,7 +22,8 @@
       &--action{
         @include inline-block;
         .btn--primary{
-        @include size(em(100) 2em);
+        margin-left: 15px;
+        @include size(em(125) 2.6em);
         @include border-top-radius(15px);
         @include border-right-radius(15px);
         @include border-bottom-radius(15px);

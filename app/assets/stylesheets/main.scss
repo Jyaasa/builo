@@ -122,6 +122,7 @@ body {
 section.category--list{
   @include margin(null null em(30) null);
   h1{
+    margin-bottom: 20px;
     color: $action-color;
   }
   @include margin(3em null);
@@ -140,31 +141,112 @@ section.category--list{
   }
 }
 .link-list{
-  @include padding(null null em(20) null);
+  @include padding(null null 3em null);
     li{
+      padding-right: 15px;
       @include inline-block;
       a {
-        @include padding(null em(10));
-          border-right: 1px solid $action-color;
+        padding-right: 15px;
+        border-right: 3px solid $action-color;
       }
     }
   }
 .categories-company-trust{
   h3.company-trust--title {
     text-align: center;
+    font-size: 1.5em;
   }
   .company-trust--list{
+    img{
+      max-width: 25%;
+    }
+    h3{font-size: 2.125rem;}
      @include media(max-width $bp-small){
       @include  span-columns(12);
       @include margin(1em null);
     }
   }
 }
-
+.no-padder-l{
+  padding-left: 0px !important;
+}
 .padder-l-r{
   @include padding(null 75px null 75px);
 }
 
+// search results
+.search-results-list{
+  section.search-result{
+    margin-bottom: 20px;
+    padding: 40px 60px;
+    background: #fff;
+    border: 1px solid $border-color;
+    border-radius: 25px;
+    width: 100%;
+    @include  span-columns(12);
+    @include clearfix;
+    section.company-wrapper{
+      @include span-columns(6 of 12);
+      @include omega();
+      h2{
+        border-bottom: 5px solid $action-color;
+       }
+      .company-details{
+        @include padding(null 20px);
+        p.adddress{
+          @include padding(20px null 0 null);
+          margin-bottom: 0px
+        }
+          .btn--primary{
+            background-color: $action-color;
+            padding: 5px 10px;
+            margin-right: 40px;
+            border-radius: 3px;
+            border: 1px solid $border-color;
+            color: #fff;
+         }
+          .scale{
+            p{
+            @include inline-block;
+            border-radius: 3px;
+            margin-right: 20px;
+            padding: 5px 25px;
+            border: 1px solid $border-color;
+            line-height: 24px;
+            text-align: center;
+          }
+         }
+        .building{
+          width: 100%;
+          padding-top: 20px;
+          p {
+            border: 1px solid $action-color;
+            border-radius: 3px;
+            padding: 5px 10px;
+            margin-right: 20px;
+            @include inline-block;
+            &.scale{
+              border: 1px solid $border-color;
+              background-color: rgba(203,203,203,0.22);
+            }
+          }
+        }
+      }
+    }
+    section.company-image{
+      padding: 0px;
+      @include span-columns(6 of 12);
+      @include omega();
+      img{
+      }
+    }
+    article{
+      padding-top: 40px;
+      @include inline-block;
+    }
+    
+  }
+}
 .company-detail{
   @include span-columns(9);
   .content-nav{

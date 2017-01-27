@@ -1,0 +1,51 @@
+.search-results-container{
+  border: 1px solid $border-color;
+  @include outer-container;
+  @include background($container-background-color);
+  aside{
+    @include span-columns(3);
+    border-right: 1px solid $border-color;
+    @include omega();
+  }
+  section.search-results-list{
+    @include span-columns(9);
+    @include omega();
+    @include padding(null em(40));
+  }
+  clear: both;
+
+  h2{
+    padding-right: 100px;
+    margin-bottom: 0px;
+    padding: 10px;
+    @include inline-block;
+  }
+  aside{
+    @include padding(em(15) em(20));
+    .form{
+      &--field{
+        .last{
+          margin-top: 40px;
+        }
+        &__text{
+          border: 1px solid $border-color;
+        }
+      }
+      &--action{
+        float: right;
+        button{
+          border: 1px solid $border-color;
+          border-radius: 25px;
+          background-color: rgba(203,203,203,0.22);
+        }
+
+        }
+    .search-fields{
+      border-bottom: 1px solid $border-color;
+      }
+    }
+    h2{
+      color: #b1b1b1;
+    }
+  }
+}

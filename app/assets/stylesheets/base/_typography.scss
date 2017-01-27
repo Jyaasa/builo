@@ -15,6 +15,7 @@ h6 {
   font-size: $base-font-size;
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
+  font-weight: normal;
 }
 h1{
   font-size: 45px;
@@ -25,6 +26,7 @@ h2{
 
 p {
   margin: 0 0 $small-spacing;
+  font-size: 14px;
 }
 
 a {
