@@ -1,0 +1,10 @@
+.star{
+  border: 1px solid $light-gray;
+  border-radius: 15px;
+  background: asset-url('star.png') no-repeat center center;
+  @include size(126px 55px );
+  padding: 0px 0 0 30px;
+  background-position-x: 5px;
+  background-size: 40px;
+  color: #ccc;
+}

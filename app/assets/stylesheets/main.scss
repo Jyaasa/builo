@@ -249,6 +249,7 @@ section.category--list{
 }
 .company-detail{
   @include span-columns(9);
+
   .content-nav{
     border-bottom: 2px solid $light-gray;
     li{
@@ -295,12 +296,29 @@ section.category--list{
   }
   
   .policy{
+    padding-bottom: 40px;
     &--detail{
       @include span-columns(10);
       @include shift(2);
+      color: #8B8B8B;
+      padding-left: 40px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid $light-gray;
+      float: none;
       &__item{
         display: inline-block;
         width: 30%;
+        li{
+          line-height: 32px;  
+        }
+      }
+      .sm-circle{
+        @include size(5px);
+        border-radius: 100%;
+        border: 2px solid $light-gray;
+        display: inline-block;
+        padding: 8px;
+        margin-left: 15px;
       }
       .cost{
         span:first-child{
@@ -308,8 +326,74 @@ section.category--list{
         }
       }
     }
-
+    &--document{
+      color:  #8B8B8B;
+      line-height: 30px;
+      padding-top: 40px;
+      .info{
+        @include outer-container;
+        margin-bottom: 20px;
+        &--label{
+          @include span-columns(2)
+        }
+        &--description{
+          @include span-columns(10);
+          padding-left: 40px;
+          ul{
+            list-style: disc;
+            padding-left: 24px;
+          }
+          li{
+            margin-bottom: 15px;
+          }
+        }    
+      }
+    }
   }
+  .contact{
+    color: #8B8B8B;
+    text-align: center;
+    position: relative;
+    border-bottom: 2px solid $light-gray;
+    padding-bottom: 40px;
+    &--btn{
+      @include padding(20px 42px);
+      color: #fff;
+      font-size: 24px;
+    }
+    &--info span{
+      padding: 0 10px;
+    }
+    &--save{
+      @include position(absolute, 0 0 null null);
+    }
+  }
+  .performance{
+    padding-top: 40px;
+    @include outer-container();
+    &--title{
+      @include span-columns(2);
+    }
+    &--photos{
+      @include span-columns(10);
+    }
+    .photos{
+      li.block{
+        @include span-columns(4);
+        @include omega(3n);
+        margin-bottom: 24px;
+      }
+      &--title{
+        font-size: 18px;
+        min-height: 60px;
+        line-height: 24px;
+      }
+      &--image{
+        width: 100%;
+      }
+    }
+  }
+
 }
 .company-feature{
  @include span-columns(3) 
