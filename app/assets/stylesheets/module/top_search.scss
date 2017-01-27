@@ -22,13 +22,18 @@
       &--action{
         @include inline-block;
         .btn--primary{
-        margin-left: 15px;
-        @include size(em(125) 2.6em);
-        @include border-top-radius(15px);
-        @include border-right-radius(15px);
-        @include border-bottom-radius(15px);
-        @include border-left-radius(15px);
-        border: 1px solid $base-border-color;
+          margin-left: 15px;
+          padding: 16px 36px;
+          @include border-top-radius(15px);
+          @include border-right-radius(15px);
+          @include border-bottom-radius(15px);
+          @include border-left-radius(15px);
+          border: 1px solid #95989A;
+          font-size: 30px;
+          @include media(max-width $bp-medium){
+            padding: 12px 24px;
+            font-size: 24px;
+          }
         }
       }
     }

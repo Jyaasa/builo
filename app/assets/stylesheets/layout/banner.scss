@@ -3,6 +3,7 @@
     text-align: right;
     h1{
       font-size: em(100);
+      font-weight: bold;
       line-height: 124px;
       @include margin(rem(20) null null null);
       @include media($bp-large){

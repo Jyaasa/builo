@@ -40,20 +40,18 @@
       .btn{
         &--primary{
           @include size (auto 100px);
-          @include border-top-radius(25px);
-          @include border-right-radius(25px);
-          @include border-bottom-radius(25px);
-          @include border-left-radius(25px);
+          border-radius: 24px;
           font-size: rem(60);
           line-height: 0;
-          padding: 0 40px;
+          padding: 0 50px;
+          border: 1px solid #95989A;
           @include media(max-width $bp-large){
             @include size (auto 70px);
             font-size: rem(40);
           }
           @include media(max-width $bp-medium){
             @include size(100% 60px);
-            padding: 15px 24px !important;
+            padding: 15px 24px;
             font-size: rem(30);
           }
           @include media(max-width $bp-small){
