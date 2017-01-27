@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root 'pages#home'
   get '/categories' => 'pages#categories'
   get '/search' => 'pages#search'
-  get '/show' => 'pages#show'
+  get '/company/show' => 'pages#show'
 end

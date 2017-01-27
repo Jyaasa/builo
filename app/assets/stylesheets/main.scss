@@ -357,7 +357,6 @@ section.service-title{
   }
   
   .policy{
-    padding-bottom: 40px;
     &--detail{
       @include span-columns(10);
       @include shift(2);
@@ -417,6 +416,9 @@ section.service-title{
     position: relative;
     border-bottom: 2px solid $light-gray;
     padding-bottom: 40px;
+    &--action{
+      margin-top: 40px;
+    }
     &--btn{
       @include padding(20px 42px);
       color: #fff;
@@ -439,6 +441,9 @@ section.service-title{
       @include span-columns(10);
     }
     .photos{
+      ul{
+        @include outer-container;
+      }
       li.block{
         @include span-columns(4);
         @include omega(3n);
@@ -452,6 +457,66 @@ section.service-title{
       &--image{
         width: 100%;
       }
+    }
+  }
+  .review{
+    &--title{
+      font-size: 32px;
+      &__stars{
+        color: #00888B;
+      }
+    }
+    &--summery-contents{
+      @include outer-container;
+    }
+    &--summery{
+      @include span-columns(10);
+      @include shift(2);
+      border-bottom: 2px solid $light-gray;
+      padding-bottom: 40px;
+    }
+    &--type{
+      font-size: 22px;
+      color: #8B8B8B;
+      line-height: 30px;
+      @include span-columns(6);
+      @include omega();
+      &:last-child{
+        display: block;
+        width: 100%;
+        margin-top: 15px;
+      }
+    }
+  }
+  .reputation{
+    @include outer-container;
+    color: #8B8B8B;
+    padding-top: 3%;
+    &--info{
+      @include span-columns(2);
+      text-align: center;
+    }
+    &__name{
+      font-size: 22px;
+      line-height: 28px;
+    }
+    &--feedback{
+      @include span-columns(10);
+      padding-top: 2%;
+      min-height: 255px;
+      border-bottom: 2px solid #ddd;
+      &__title{
+        font-size: 26px;
+      }
+      &__detail{
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
+    &--more{
+      @include shift(2);
+      padding-left: 40px;
+      margin-top: 40px;
     }
   }
 
