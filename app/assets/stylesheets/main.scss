@@ -164,6 +164,7 @@ section.category--list{
      @include media(max-width $bp-small){
       @include  span-columns(12);
       @include margin(1em null);
+      clear: both;
     }
   }
 }
@@ -173,79 +174,139 @@ section.category--list{
 .padder-l-r{
   @include padding(null 75px null 75px);
 }
-
-// search results
+// search results:
+section.service-title{
+  border-radius: 15px 15px 0px 0px;
+  border: 1px solid $border-color;
+  border-bottom: none;
+  @include background($container-background-color);
+  @include outer-container;
+  h2{
+    padding: 15px 0px 0px 40px;
+  }
+  section.aside-title{
+    @include span-columns(3);
+    @include omega();
+    border-right: 1px solid $border-color;
+    h2{
+      color: #b1b1b1;
+    }
+  }
+  section.search-result-title{
+    @include span-columns(9);
+    h2{
+      @include inline-block;
+      margin-right:40px;
+      padding-left: 150px;
+          }
+  }
+    clear: both;
+}
 .search-results-list{
+  margin-left: 2%;
   section.search-result{
-    margin-bottom: 20px;
-    padding: 40px 60px;
+    margin: 40px 0px 20px 0px;
+    padding: 60px 30px 60px 100px;
+    @include media($bp-small){
+      padding: 60px 30px 60px 50px;
+    }
     background: #fff;
     border: 1px solid $border-color;
     border-radius: 25px;
-    width: 100%;
-    @include  span-columns(12);
-    @include clearfix;
-    section.company-wrapper{
-      @include span-columns(6 of 12);
-      @include omega();
-      h2{
-        border-bottom: 5px solid $action-color;
-       }
-      .company-details{
-        @include padding(null 20px);
-        p.adddress{
-          @include padding(20px null 0 null);
-          margin-bottom: 0px
-        }
-          .btn--primary{
-            background-color: $action-color;
-            padding: 5px 10px;
-            margin-right: 40px;
-            border-radius: 3px;
-            border: 1px solid $border-color;
-            color: #fff;
-         }
-          .scale{
-            p{
-            @include inline-block;
-            border-radius: 3px;
-            margin-right: 20px;
-            padding: 5px 25px;
-            border: 1px solid $border-color;
-            line-height: 24px;
-            text-align: center;
+    @include outer-container;
+    h2.service-title{
+      @include inline-block;
+    }
+    .comapny-details-image{
+      @include outer-container;
+      @include clearfix;
+      .company-wrapper{
+        @include span-columns(6);
+        h2{
+          display: inline-block;
+          border-bottom: 5px solid $action-color;
+          @include media($bp-small) {
+            font-size: 35px;
           }
          }
-        .building{
-          width: 100%;
-          padding-top: 20px;
-          p {
-            border: 1px solid $action-color;
-            border-radius: 3px;
-            padding: 5px 10px;
-            margin-right: 20px;
-            @include inline-block;
-            &.scale{
+        .company-details{
+          @include padding(null 20px);
+          p.adddress{
+            @include padding(20px null 0 null);
+            margin-bottom: 0px
+          }
+          .company-tag{
+            display: block;
+            .btn--primary{
+              background-color: $action-color;
+              padding: 5px 10px;
+              margin-right: 40px;
+              border-radius: 3px;
               border: 1px solid $border-color;
-              background-color: rgba(203,203,203,0.22);
+              color: #fff;
+              @include media($bp-small){
+                margin-right: 10px;
+                padding: 5px;
+              }
+           }
+         }
+            .scale{
+              span{
+              @include inline-block;
+              color: $action-color;
+              font-size: 14px;
+              border-radius: 3px;
+              margin-right: 20px;
+              padding: 0px 25px;
+              border: 1px solid $border-color;
+              line-height: 24px;
+              text-align: center;
+            }
+           }
+          .building{
+            width: 100%;
+            .btn-ghost {
+              border: 1px solid #f92300;
+              border-radius: 3px;
+              padding: 5px 30px;
+              margin-right: 20px;
+              margin-bottom: 10px;
+              color: #000;
+              font-size: 14px;
+              @include inline-block;
+              &.scale{
+                border: 1px solid $border-color;
+                background-color: rgba(203,203,203,0.22);
+              }
             }
           }
         }
       }
-    }
-    section.company-image{
-      padding: 0px;
-      @include span-columns(6 of 12);
-      @include omega();
-      img{
+      section.company-image{
+        padding: 0px;
+        @include span-columns(6);
+        @include omega();
+        img{
+          float: right;
+        }
       }
     }
-    article{
-      padding-top: 40px;
-      @include inline-block;
+    .company-info{
+      margin-top: 40px;
+      clear: both;
+      @include outer-container;
+      article{
+        @include span-columns(9);
+      }
+      .save{
+        @include span-columns(3);
+        padding-left: 60px;
+        padding-top: 5px;
+      }
     }
     
   }
+
 }
 .company-detail{
   @include span-columns(9);
