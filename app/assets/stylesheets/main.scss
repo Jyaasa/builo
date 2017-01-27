@@ -296,10 +296,10 @@ section.service-title{
       clear: both;
       @include outer-container;
       article{
-        @include span-columns(9);
+        @include span-columns(10);
       }
       .save{
-        @include span-columns(3);
+        @include span-columns(2);
         padding-left: 60px;
         padding-top: 5px;
       }
