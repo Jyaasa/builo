@@ -6,7 +6,7 @@
         @include padding(null null null em(15));
       }
       &--field{
-        @include padding(em(14) null em(10) em(10));
+        @include padding(em(8) null em(8) em(10));
         @include media(max-width $bp-small){
           @include padding(em(10) em(10) null);
         }

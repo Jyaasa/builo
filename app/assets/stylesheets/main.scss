@@ -40,27 +40,6 @@ body {
   }
 }
 
-.hero{
-  background:  asset-url('banner.png') center center no-repeat;
-  background-size: cover;
-  @include size(100% vh(1080));
-  @include media($bp-xlarge){
-    @include size(100% 43em);
-  }
-  @include media(max-width $bp-xlarge){
-    @include size(100% 43em);
-  }
-  @include media(max-width $bp-large){
-    @include size(100% 35em);
-  }
-  @include media(max-width $bp-medium){
-    @include size(100% 37em);
-  }  
-  @include media(max-width $bp-small){
-    @include size(100% 35em);
-  }    
-
-}
 .category{
   @include position(relative, null);
   @include size(100% rem(257));
@@ -410,27 +389,6 @@ section.service-title{
       }
     }
   }
-  .contact{
-    color: #8B8B8B;
-    text-align: center;
-    position: relative;
-    border-bottom: 2px solid $light-gray;
-    padding-bottom: 40px;
-    &--action{
-      margin-top: 40px;
-    }
-    &--btn{
-      @include padding(20px 42px);
-      color: #fff;
-      font-size: 24px;
-    }
-    &--info span{
-      padding: 0 10px;
-    }
-    &--save{
-      @include position(absolute, 0 0 null null);
-    }
-  }
   .performance{
     padding-top: 40px;
     @include outer-container();
@@ -519,8 +477,7 @@ section.service-title{
       margin-top: 40px;
     }
   }
-
 }
-.company-feature{
+.company-infomation{
  @include span-columns(3) 
 }

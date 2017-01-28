@@ -1,19 +1,26 @@
 .top-search{
-  @include size(100% 110px);
+  @include size(100% 80px);
   background: #3E3E3E;
-  @include media(max-width $bp-medium){
-    @include size(100% 80px);
+  @include media($bp-large){
+    @include size(100% 95px);
   }
 }
 .l-banner
   .search{
     @include margin(0 auto);
-    @include size( 90% auto);
-    @include media(max-width $bp-large){
-      @include size(100% auto);
+    @include size(100% 0);
+    @include media($bp-xlarge){
+      @include size(97% auto);
+    }
+    @include media($bp-xlarge){
+      @include size( 90% auto);
     }
     h2{
-      @include margin(null null 20px 160px);
+      @include margin(null null 20px 2%);
+      @include media($bp-large){
+        @include margin(null null 20px 160px);
+      }
+
     }
   .form{
     &--field{
@@ -48,6 +55,7 @@
           @include media(max-width $bp-large){
             @include size (auto 70px);
             font-size: rem(40);
+            padding: 0 36px;
           }
           @include media(max-width $bp-medium){
             @include size(100% 60px);

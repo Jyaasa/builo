@@ -1,0 +1,36 @@
+.contact{
+  color: #8B8B8B;
+  text-align: center;
+  position: relative;
+  border-bottom: 2px solid $light-gray;
+  padding-bottom: 40px;
+  &--action{
+    margin-top: 40px;
+  }
+  &--btn{
+    @include padding(20px 42px);
+    color: #fff;
+    font-size: 24px;
+  }
+  &--info span{
+    padding: 0 10px;
+  }
+  &--save{
+    @include position(absolute, 0 0 null null);
+  }
+}
+
+.company-infomation{
+  .contact{
+    border: 2px solid $medium-gray;
+    padding: 5%;
+    margin-bottom: 15px;
+    &--save{
+      @include position(static, null);
+      margin: 0 auto;
+    }
+    &--action{
+      margin-top: 0px;
+    }
+  }
+}

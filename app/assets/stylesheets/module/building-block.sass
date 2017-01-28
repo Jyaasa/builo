@@ -1,0 +1,47 @@
+.building
+  border: 2px solid $medium-gray
+  padding: 5%
+  margin-bottom: 15px
+  margin-top: 60px
+  &--type
+    @include outer-container
+    margin-bottom: 20px
+    &__btn
+      color: #fff
+      @include padding(15px 24px)
+      @include span-columns(6)
+      border: 1px solid $medium-gray
+  label
+    font-weight: normal
+    line-height: 18px 
+    color: #B1B1B1
+    font-size: 18px
+  &--target
+    margin-bottom: 24px
+    &__tag
+      @extend button
+      @include padding(15px 16px)
+      background: transparent
+      border: 1px solid $action-color
+      &:first-of-type
+        margin-right: 12%
+  &--size
+    @include outer-container
+    &__type
+      float: left
+      margin-right: 9%
+      @include padding(10px 16px)
+      background: transparent
+      border: 1px solid $medium-gray
+      text-align: center
+      color: $action-color
+      line-height: 24px
+      border-radius: $base-border-radius
+      &:last-of-type
+        background: $light-gray
+        color: #fff
+        margin-right: 0
+
+
+
+

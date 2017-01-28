@@ -4,7 +4,9 @@ header.navigation {
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
-
+  @include media($bp-medium){
+    
+  }
   .navigation-wrapper {
     @include clearfix;
     position: relative;
