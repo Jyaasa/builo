@@ -1,0 +1,242 @@
+.company-detail{
+  @include span-columns(9);
+
+  .content-nav{
+    border-bottom: 2px solid $light-gray;
+    li{
+      display: inline-block;
+      @include padding(0px 50px); 
+      a{
+        color: #626262;
+        font-size: 24px;
+        @include media($bp-large){
+          font-size: 36px;
+        }
+      }
+    }
+  }
+  .about{
+    h1{
+      @include margin(50px 0);   
+      border-bottom: 3px solid $action-color; 
+      @include inline-block;
+      @include media($bp-large){
+        font-size: 70px;
+        @include margin(80px 0);   
+        }
+      }
+    &--company{
+      color: #8B8B8B;
+      line-height: 24px;
+      font-size: 18px;
+      @include media($bp-large){
+        margin-bottom: 60px;  
+        font-size: 22px;
+        line-height: 30px;
+      }
+    .info{
+      @include outer-container;
+      margin-bottom: 20px;
+      &--label{
+        @include span-columns(2)
+      }
+      &--description{
+        @include span-columns(10);
+        padding-left: 40px;
+        ul{
+          list-style: disc;
+          padding-left: 24px;
+        }
+      }    
+      &--description.line{
+        border-bottom: 2px solid $light-gray;
+        padding-bottom: 40px;
+      }
+    }
+  }
+  }
+  
+  .policy{
+    &--detail{
+      @include span-columns(10);
+      @include shift(2);
+      color: #8B8B8B;
+      padding-left: 40px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid $light-gray;
+      float: none;
+      &__item{
+        display: inline-block;
+        width: 30%;
+        font-size: 18px;
+        line-height: 26px;
+        li{
+          @include media ($bp-large){
+            line-height: 32px; 
+          }
+        }
+      }
+      .sm-circle{
+        @include size(5px);
+        border-radius: 100%;
+        border: 2px solid $light-gray;
+        display: inline-block;
+        padding: 6px;
+        margin-left: 15px;
+        @include media($bp-large){
+          padding: 8px;
+        }
+      }
+      .cost{
+        span:first-child{
+          margin-right: 30px;
+        }
+      }
+    }
+    &--document{
+      color:  #8B8B8B;
+      line-height: 26px;
+      font-size: 18px;
+      padding-top: 40px;
+      @include media($bp-large){
+        font-size: 22px;
+        line-height: 30px;  
+      }
+      .info{
+        @include outer-container;
+        margin-bottom: 20px;
+        &--label{
+          @include span-columns(2)
+        }
+        &--description{
+          @include span-columns(10);
+          padding-left: 40px;
+          ul{
+            list-style: disc;
+            padding-left: 24px;
+          }
+          li{
+            margin-bottom: 15px;
+          }
+        }    
+      }
+    }
+  }
+  .performance{
+    padding-top: 40px;
+    @include outer-container();
+    &--title{
+      @include span-columns(2);
+    }
+    &--photos{
+      @include span-columns(10);
+    }
+    .photos{
+      ul{
+        @include outer-container;
+      }
+      li.block{
+        @include span-columns(4);
+        @include omega(3n);
+        margin-bottom: 24px;
+      }
+      &--title{
+        font-size: 18px;
+        min-height: 60px;
+        line-height: 24px;
+      }
+      &--image{
+        width: 100%;
+      }
+    }
+  }
+  .review{
+    &--title{
+      font-size: 18px;
+      @include media($bp-large){
+        font-size: 32px;
+      }
+      &__stars{
+        color: #00888B;
+      }
+    }
+    &--summery-contents{
+      @include outer-container;
+    }
+    &--summery{
+      @include span-columns(10);
+      @include shift(2);
+      border-bottom: 2px solid $light-gray;
+      padding-bottom: 40px;
+    }
+    &--type{
+      font-size: 14px;
+      color: #8B8B8B;
+      line-height: 26px;
+      @include span-columns(6);
+      @include omega();
+      &:last-child{
+        display: block;
+        width: 100%;
+        margin-top: 15px;
+      }
+      @include media($bp-small){
+        font-size: 14px
+      }
+      @include media($bp-medium){
+        font-size: 17px;
+        line-height: 22px;
+      }         
+      @include media($bp-large){
+        font-size: 22px;
+        line-height: 30px;
+      }   
+    }
+  }
+  .reputation{
+    @include outer-container;
+    color: #8B8B8B;
+    padding-top: 3%;
+    &--info{
+      @include span-columns(2);
+      text-align: center;
+      img{
+        @include media(max-width $bp-large){
+          width: 70%;
+        }
+      }
+    }
+    &__name{
+      font-size: 18px;
+      line-height: 26px;
+      @include media($bp-large){
+        font-size: 22px;
+        line-height: 28px;
+      }
+    }
+    &--feedback{
+      @include span-columns(10);
+      padding-top: 2%;
+      min-height: 255px;
+      border-bottom: 2px solid #ddd;
+      &__title{
+        font-size: 26px;
+      }
+      &__detail{
+        font-size: 18px;
+        @include media($bp-large){
+          font-size: 22px;
+          line-height: 26px;  
+        }
+      }
+    }
+    &--more{
+      @include shift(2);
+      padding-left: 40px;
+      margin-top: 40px;
+    }
+  }
+}
+.company-infomation{
+ @include span-columns(3) 
+}
