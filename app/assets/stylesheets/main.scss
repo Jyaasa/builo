@@ -103,6 +103,10 @@ section.category--list{
   h1{
     margin-bottom: 20px;
     color: $action-color;
+    font-size: 32px;
+    @include media($bp-large){
+      font-size: 40px;
+    }
   }
   @include margin(3em null);
   section.category-left{
@@ -126,7 +130,7 @@ section.category--list{
       @include inline-block;
       a {
         padding-right: 15px;
-        border-right: 3px solid $action-color;
+        border-right: 2px solid $action-color;
       }
     }
   }
@@ -139,12 +143,19 @@ section.category--list{
     img{
       max-width: 25%;
     }
-    h3{font-size: 2.125rem;}
-     @include media(max-width $bp-small){
-      @include  span-columns(12);
-      @include margin(1em null);
-      clear: both;
+    h3{
+      font-size: 24px;
+      @include media ($bp-large){
+        font-size: 2.125rem;
+      }
     }
+     @include media(max-width $bp-small){
+        @include  span-columns(12);
+        @include margin(1em null);
+        clear: both;
+      }
+
+
   }
 }
 .no-padder-l{
@@ -169,6 +180,11 @@ section.service-title{
     border-right: 1px solid $border-color;
     h2{
       color: #b1b1b1;
+      @include media(max-width $bp-large ){
+        font-size: 24px;
+        margin-bottom: 0;
+        padding: 17px 30px;
+      }      
     }
   }
   section.search-result-title{
@@ -177,7 +193,15 @@ section.service-title{
       @include inline-block;
       margin-right:40px;
       padding-left: 150px;
-          }
+      @include media(max-width $bp-medium){
+        font-size: 24px; 
+      }
+      @include media(max-width $bp-large ){
+        font-size: 32px;
+        margin-bottom: 0;
+      }
+
+    }
   }
     clear: both;
 }
@@ -185,8 +209,11 @@ section.service-title{
   margin-left: 2%;
   section.search-result{
     margin: 40px 0px 20px 0px;
-    padding: 60px 30px 60px 100px;
-    @include media($bp-small){
+    padding: 30px;
+    @include media($bp-medium){
+      padding: 30px;
+    }
+    @include media($bp-large){
       padding: 60px 30px 60px 50px;
     }
     background: #fff;
@@ -200,12 +227,16 @@ section.service-title{
       @include outer-container;
       @include clearfix;
       .company-wrapper{
-        @include span-columns(6);
+        @include span-columns(7);
         h2{
           display: inline-block;
           border-bottom: 5px solid $action-color;
-          @include media($bp-small) {
-            font-size: 35px;
+          font-size: 30px;
+          @include media($bp-large) {
+            font-size: 30px;
+          }
+          @include media($bp-large) {
+            font-size: 42px;
           }
          }
         .company-details{
@@ -223,6 +254,8 @@ section.service-title{
               border-radius: 3px;
               border: 1px solid $border-color;
               color: #fff;
+              font-size: 18px;
+              font-weight: normal;
               @include media($bp-small){
                 margin-right: 10px;
                 padding: 5px;
@@ -235,24 +268,27 @@ section.service-title{
               color: $action-color;
               font-size: 14px;
               border-radius: 3px;
-              margin-right: 20px;
-              padding: 0px 25px;
+              margin-right: 15px;
+              padding: 5px 18px;
               border: 1px solid $border-color;
-              line-height: 24px;
+              line-height: 18px;
               text-align: center;
             }
            }
-          .building{
+          .building-type{
             width: 100%;
             .btn-ghost {
               border: 1px solid #f92300;
               border-radius: 3px;
-              padding: 5px 30px;
+              padding: 5px 15px;
               margin-right: 20px;
               margin-bottom: 10px;
               color: #000;
               font-size: 14px;
               @include inline-block;
+              @include media($bp-large){
+                padding: 5px 30px;
+              }
               &.scale{
                 border: 1px solid $border-color;
                 background-color: rgba(203,203,203,0.22);
@@ -263,7 +299,7 @@ section.service-title{
       }
       section.company-image{
         padding: 0px;
-        @include span-columns(6);
+        @include span-columns(5);
         @include omega();
         img{
           float: right;
@@ -275,12 +311,17 @@ section.service-title{
       clear: both;
       @include outer-container;
       article{
-        @include span-columns(10);
+        @include span-columns(9);
       }
       .save{
         @include span-columns(2);
-        padding-left: 60px;
-        padding-top: 5px;
+        padding-left: 50px;
+        font-size: 24px;
+        width: 130px;
+        margin-left: 50px;
+        @include media(max-width $bp-large){
+          margin-left: 0;
+        }
       }
     }
     

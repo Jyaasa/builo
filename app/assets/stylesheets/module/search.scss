@@ -1,8 +1,14 @@
 .top-search{
   @include size(100% 80px);
   background: #3E3E3E;
+  @include media($bp-small){
+    @include size(100% 60px);
+  }    
+  @include media($bp-medium){
+    @include size(100% 85px);
+  }  
   @include media($bp-large){
-    @include size(100% 95px);
+    @include size(100% 92px);
   }
 }
 .l-banner
@@ -64,6 +70,7 @@
           }
           @include media(max-width $bp-small){
             @include size(100% 40px);
+            font-size: 18px
           }           
         }
       }

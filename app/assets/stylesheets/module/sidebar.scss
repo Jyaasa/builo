@@ -9,10 +9,19 @@
     @include omega();
     .search-fields{
       padding: 40px 40px 80px 40px;
+      @include media(max-width $bp-large){
+        padding: 20px 20px 80px 20px;
+      }
       span{
         display: block;
         padding-left: 40px;
         color: $action-color;
+      }
+      h2{
+        font-size: 42px;
+        @include media(max-width $bp-large){
+          font-size: 32px;
+        }
       }
       .evaluation
       {

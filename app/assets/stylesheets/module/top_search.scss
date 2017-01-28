@@ -2,6 +2,9 @@
   .search{
     .form{
       @include padding(null null null em(60));
+      @include media(max-width $bp-medium){
+        padding-left: 0;
+      }
       @include media(max-width $bp-small){
         @include padding(null null null em(15));
       }
@@ -30,10 +33,14 @@
           @include border-left-radius(15px);
           border: 1px solid #95989A;
           font-size: 30px;
-          @include media(max-width $bp-medium){
-            padding: 12px 24px;
+          @include media(max-width $bp-large){
+            padding: 16px 24px;
             font-size: 24px;
           }
+          @include media(max-width $bp-medium){
+            padding: 12px 24px;
+            font-size: 20px;
+          }          
         }
       }
     }

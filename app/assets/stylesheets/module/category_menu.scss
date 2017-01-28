@@ -1,5 +1,15 @@
 .categories{
   margin-top: 40px;
+  h2{
+    font-size: 24px;
+    margin-bottom: 15px;
+    &:first-of-type{
+      margin-right: 0;
+    }
+    @include media($bp-large){
+      font-size: 32px;
+    }
+  }
 }
 .menu-container{
   background: #f8f8f8;
@@ -16,12 +26,19 @@
   li{
     @include padding(null 1em);
     @include inline-block;
+    font-size: 22px;
+    @include media($bp-large){
+      font-size: 24px;
+    }
   }
 }
 .link-list{
   li{
     a{
-      font-size: 32px;
+      font-size: 22px;
+      @include media($bp-large){
+        font-size: 28px;  
+      }
     }
   }
 }
