@@ -1,0 +1,51 @@
+#modal{
+  padding: 60px;
+  background-color: rgba(#000, 0.85);
+  display: none;
+  position: fixed; 
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  // opacity: 0;
+  transition: opacity 0.25s ease;
+  }
+.company-popup{
+  .close{
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    right: 208px;
+    font-size: 50px;
+    color: #fff;
+    }
+  @include outer-container;
+  @include clearfix;
+  transition: opacity 0.25s ease;
+  width: 80%;
+  margin: auto;
+  &--image{
+    @include span-columns(6);
+    img{
+      width: 745px;
+      padding-right: 50px;
+    }
+  }
+  &--building-info{
+    @include span-columns(6);
+    @include omega;
+    background: #fff;
+    border-radius: 25px;
+    padding: 60px;
+  }
+  .company-images{
+    @include span-columns(12);
+    li{
+      padding: 20px;
+      @include inline-block;
+      width: 200px;
+    }
+  }
+}

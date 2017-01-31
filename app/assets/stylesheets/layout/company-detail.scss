@@ -238,5 +238,6 @@
   }
 }
 .company-infomation{
- @include span-columns(3) 
+ @include span-columns(3);
+ @include omega;
 }

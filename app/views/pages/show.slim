@@ -1,5 +1,5 @@
 = render "shared/header.slim"
-section.container
+section.container.modal#my_modal
   section.company-detail
     section.content-nav
       ul
@@ -294,6 +294,7 @@ section.container
         span 加盟団体：
       .office-data__key
         span 主要顧客：
+  = render 'shared/popup'
 
 
 
