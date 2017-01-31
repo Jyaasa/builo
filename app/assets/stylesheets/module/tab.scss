@@ -1,8 +1,12 @@
 .category{
   .more{
-    @include position(absolute, null 40px 20px null);
+    position: relative;
     a{
       color: #fff;
+      position: absolute;
+      right: 0;
+      bottom: 35px;
+      font-size: 18px;
     }
   }
 }
@@ -13,6 +17,7 @@
   padding: 0;
   max-width: 1130px;
   margin: 0 auto;
+  min-height: 220px;
   @include media(max-width $tab-mode) {
     border: $tab-border;
   }
@@ -70,7 +75,7 @@
     padding: $base-spacing $gutter;
     width: 100%;
     @include position(absolute, null 0 null 0em);
-    @include size(auto rem(180));
+    @include size(auto 145px);
     li{
       @include display(inline-block);
       border-right: 2px solid #fff;
@@ -79,6 +84,7 @@
 
     a{
       color: #FFFFFF;
+      font-size: 18px;
       }
     }
 

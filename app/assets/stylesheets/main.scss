@@ -10,18 +10,6 @@ body {
     font-size: $base-font-size*1.4;
     line-height: $base-line-height*1.4;
   }
-
-  @media #{$mq-large} {
-    font-size: $base-font-size*1.5;
-  }
-
-  @media #{$mq-xlarge} {
-    font-size: $base-font-size*1.6;
-  }
-
-  @media #{$mq-xxlarge} {
-    font-size: $base-font-size*1.8;
-  }
 }
 
 .container{
@@ -30,17 +18,15 @@ body {
 
 .category{
   @include position(relative, null);
-  @include size(100% rem(257));
+  @include size(100% 195px);
   @include margin(-80px 0 0 0);
 }
 
 .marekting-info{
   text-align: center;
-  @include pad(1em 0);
   h1{
-    font-size: 66px;
     font-weight: normal;
-    line-height: 100px;
+    line-height: 70px;
     color: #4B4B4B;
     margin-top: 1em;
     @include media(max-width $bp-large){
@@ -63,24 +49,20 @@ body {
 .process{
   background: #9D9D9D;
   @include pad(1em 15px);
-  h3{
+  h4{
     color: #fff;
-    font-size: rem(32);
     font-weight: normal;
   }
   &--list{
     text-align: center;
     @include span-columns(4);
-    h5{
-      font-size: 50px;
+    h4{
       color: #fff;
       font-weight: normal;
-      @include media(max-width $bp-large){
-        font-size: 44px;
-      }      
-      @include media(max-width $bp-medium){
-        font-size: 32px;
-      }
+      font-size: 32px;
+    }
+    img{
+      width: 40%;
     }
   }
 }

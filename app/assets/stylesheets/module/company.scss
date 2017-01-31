@@ -1,16 +1,9 @@
 .company-trust{
-  @include padding(2em  3em);
+  @include padding(1em  3em);
 
   &--title{
-    font-size: rem(45);
     font-weight: normal;
-    color: #4B4B4B;
-    @include media(max-width $bp-large){
-      font-size: rem(28);
-    }
-    @include media(max-width $bp-medium){
-      font-size: rem(18);
-    }    
+    color: #4B4B4B;   
   }
   &--lists{
     @include row();
@@ -18,20 +11,16 @@
   &--list{
     @include span-columns(4);
     text-align: center;
-    h3{
-      font-size: rem(50);
-      @include media(max-width $bp-large){
-        font-size: rem(32);
-      }
-      @include media(max-width $bp-medium){
-        font-size: rem(24);
-      }      
+    img{
+      width: 140px;
+    }
+    h4{
+      font-weight: bold;
     }
     p{
       color: #9D9D9D;
-      line-height: 25px;
+      line-height: 18px;
       max-width: 385px;
-      font-size: 25px;
       margin: 0 auto;
       @include media(max-width $bp-medium){
         font-size: rem(18);
@@ -45,7 +34,6 @@
   @include pad (1em 14px);
   h4{
     color: #fff;
-    font-size: rem(32);
     font-weight: normal;
   }
   ul{
@@ -61,12 +49,14 @@
     h5 {
       color: #fff;
       font-weight: normal;
+      font-size: 18px;
     }
   }
   .more{
     text-align: right;
     a{
       color: #fff;
+      font-size: 18px;
     }
   }
 }
