@@ -1,59 +1,26 @@
 .hero{
   background:  asset-url('banner.png') center center no-repeat;
   background-size: cover;
-
-  @include media($bp-small){
-    @include size(100% 34em);
-  }      
-  @include media($bp-medium){
-    @include size(100% 35em);
-  }  
-  @include media($bp-large){
-    @include size(100% 38em);
-  }
-  @include media($bp-xlarge){
-    @include size(100% 40em);
+  @include size(100% 28em);
+  @include media(max-width $bp-medium){
+    @include size(100% 37em);
   }
 }
 .l-banner
   .title{
     text-align: right;
+    margin-top: 70px;
+    margin-right: 20px;
     h1{
       font-weight: bold;
       @include margin(rem(20) null null null);
       @include media($bp-small){
-        font-size: rem(32);
-        line-height: 40px;
+        font-size: 3.4rem;
+        line-height: 62px;
       }         
       @include media($bp-medium){
-        font-size: 60px;
-        line-height: 72px;
-      }
-      @include media($bp-large){
-        font-size: 78px;
-        line-height: 96px;
-      }
-      @include media($bp-xlarge){
-        font-size: 100px;
-        line-height: 120px;
+        font-size: 62px;
+        line-height: 78px;
       }
     }
   }
-  .search
-    h2{
-      font-size: 120px;
-      font-weight: normal;
-      text-shadow: 1px 1px 0px #fff, -1px -1px 0px #fff;
-      @include media($bp-small){
-        font-size: rem(32);
-      }         
-      @include media($bp-medium){
-        font-size: 80px;
-      }
-      @include media($bp-large){
-        font-size: 100px;
-      }
-      @include media($bp-xlarge){
-        font-size: 120px;
-      }    
-    }

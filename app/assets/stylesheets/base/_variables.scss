@@ -46,7 +46,7 @@ $base-duration: 150ms;
 $base-timing: ease;
 
 //container width
-$max-width: 1920px !default;
+$max-width: 1200px !default;
   
 
 // Breakpoints
@@ -67,12 +67,12 @@ $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 //header
 $action-color: #477DCA !default;
 $dark-gray: #333 !default;
-$large-screen: 767px !default;
-$navigation-padding: 3em;
+$large-screen: 53.75em !default;
+$navigation-padding: 1em;
 $navigation-background: transparent;
 $navigation-color: $nav-color;
 $navigation-color-hover: #555;
-$navigation-height: 90px;
+$navigation-height: 60px;
 $navigation-submenu-padding: 1em;
 $navigation-submenu-width: 12em;
 $horizontal-bar-mode: $large-screen;

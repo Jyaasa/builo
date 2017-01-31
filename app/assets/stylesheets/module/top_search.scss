@@ -1,4 +1,11 @@
 .top-search{
+  @include size(100% 80px);
+  @include position(absolute, 60px 0 0 0);
+  background: #3E3E3E;
+
+  @include media($bp-small){
+    @include size(100% 60px);
+  }    
   .search{
     .form{
       @include padding(null null null em(60));

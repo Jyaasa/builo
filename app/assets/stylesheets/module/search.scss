@@ -1,50 +1,35 @@
-.top-search{
-  @include size(100% 80px);
-  background: #3E3E3E;
-  @include media($bp-small){
-    @include size(100% 60px);
-  }    
-  @include media($bp-medium){
-    @include size(100% 85px);
-  }  
-  @include media($bp-large){
-    @include size(100% 92px);
-  }
-}
 .l-banner
   .search{
     @include margin(0 auto);
     @include size(100% 0);
-    @include media($bp-xlarge){
-      @include size(97% auto);
-    }
-    @include media($bp-xlarge){
-      @include size( 90% auto);
-    }
     h2{
-      @include margin(null null 20px 2%);
-      @include media($bp-large){
-        @include margin(null null 20px 160px);
+      
+      font-size: 70px;
+      font-weight: normal;
+      text-shadow: 1px 1px 0px #fff, -1px -1px 0px #fff;
+      @include media($bp-small){
+        font-size: 62px;
+        @include margin(null null 20px 7%);
+      }         
+      @include media($bp-medium){
+        font-size: 72px;
+        @include margin(null null 20px 15%);
       }
-
     }
   .form{
+    max-width: 1000px;
+    margin: 0 auto;
     &--field{
       @include padding(0 2%);
       @include inline-block;
       width: 40%;
       &__text{
-        @include size (100% 99px);
+        @include size (100% 60px);
         @include border-color(#95989A);
-        @include media(max-width $bp-large){
-          @include size(100% 70px);
-        }
+        margin-bottom: 0;
         @include media(max-width $bp-medium){
           @include size(100% 60px);
-        }
-        @include media(max-width $bp-small){
-          @include size(100% 50px);
-        }        
+        }     
       }
     }
     &--action{
@@ -52,26 +37,17 @@
       @include padding(0 0 0 2%);
       .btn{
         &--primary{
-          @include size (auto 100px);
+          @include size (auto 60px);
           border-radius: 24px;
-          font-size: rem(60);
+          font-size: 32px;
           line-height: 0;
-          padding: 0 50px;
+          padding: 0 32px;
           border: 1px solid #95989A;
-          @include media(max-width $bp-large){
-            @include size (auto 70px);
-            font-size: rem(40);
-            padding: 0 36px;
-          }
           @include media(max-width $bp-medium){
             @include size(100% 60px);
             padding: 15px 24px;
             font-size: rem(30);
-          }
-          @include media(max-width $bp-small){
-            @include size(100% 40px);
-            font-size: 18px
-          }           
+          }       
         }
       }
     }

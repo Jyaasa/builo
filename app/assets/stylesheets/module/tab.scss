@@ -11,16 +11,14 @@
   line-height: 1.5;
   margin-bottom: $base-spacing;
   padding: 0;
-
+  max-width: 1130px;
+  margin: 0 auto;
   @include media(max-width $tab-mode) {
     border: $tab-border;
   }
 
   .tab-header-and-content {
     list-style: none;
-    &:first-child{
-        @include margin(null null null 40px);
-      }
     @include media($tab-mode) {
       display: inline;
     }
@@ -38,8 +36,9 @@
     color:   $white;
     display: block;
     font-weight: normal;
-    padding: ($base-spacing / 2) ($gutter / 1.5);
+    padding: ($base-spacing / 3) ($gutter / 3);
     text-decoration: none;
+    font-size: 20px;
 
     @include media($tab-mode) {
       border-top: 0;
@@ -60,8 +59,6 @@
 
       @include media($tab-mode) {
         background-color: $tab-active-background;
-        border: $tab-border;
-        border-bottom-color: $tab-active-background;
         margin-bottom: -1px;
       }
     }
@@ -77,7 +74,7 @@
     li{
       @include display(inline-block);
       border-right: 2px solid #fff;
-      @include padding(0 20px);
+      @include padding(0 10px);
       line-height: 20px;
 
     a{

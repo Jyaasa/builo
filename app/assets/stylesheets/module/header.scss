@@ -4,9 +4,6 @@ header.navigation {
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
-  @include media($bp-medium){
-    
-  }
   .navigation-wrapper {
     @include clearfix;
     position: relative;
@@ -23,7 +20,7 @@ header.navigation {
     }
     img {
       max-height: $navigation-height;
-      padding: 0.2em 0;
+      padding: 0.1em 0;
       @include media (max-width $bp-medium){
         padding: 1em 0;
       }
@@ -92,19 +89,16 @@ header.navigation {
     float: left;
     display: inline;
     padding-left: 30px;
+    line-height: 60px;
     li{
       padding-right: 0;
       a{
         color: $navigation-color;
         display: inline-block;
         text-decoration: none;
-        line-height: 90px;
-        font-size: 32px;
+        font-size: 18px;
         @include media ($horizontal-bar-mode) {
           padding-right: 1em;
-        }
-        @include media (max-width $bp-medium){
-          font-size: 24px;
         }
       }
     }
@@ -123,9 +117,6 @@ header.navigation {
     text-align: right;
     width: 100%;
     z-index: 9999;
-    @include media (max-width $bp-small){
-      line-height: 50px;
-    }
     @include media ($horizontal-bar-mode) {
       background: transparent;
       display: inline;
@@ -135,36 +126,24 @@ header.navigation {
     }
 
     @include media (min-width $bp-small) {
-      padding-right: 1.6em;
+      padding-right: 1.2em;
     }
     @include media (min-width $bp-medium) {
       padding-right: 2em;
-    }    
-    @include media (min-width $bp-large) {
-      padding-right: 4em;
-    }
-    @include media (min-width $bp-xlarge) {
-      padding-right: 6em;
     }    
 
     a {
       color: $navigation-color;
       display: inline-block;
       text-decoration: none;
-      font-size: 32px;
+      font-size: 18px;
       @include media ($horizontal-bar-mode) {
         padding-right: 1em; 
       }
       &:focus,
       &:hover {
         color: $navigation-color-hover;
-      }
-      @include media (max-width $bp-large){
-        font-size: 24px;
-      }
-      @include media (min-width $bp-medium) {
-        padding-right: 0em;
-      }    
+      }  
     }
   }
 

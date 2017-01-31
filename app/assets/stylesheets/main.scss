@@ -26,18 +26,6 @@ body {
 
 .container{
   @include outer-container;
-  @include media(max-width $bp-xlarge){
-    @include pad(0 40px);  
-  }
-  @include media(max-width $bp-large){
-    @include pad(0 20px);  
-  }  
-  @include media(max-width $bp-medium){
-    @include pad(0 10px);  
-  }
-  @include media(max-width $bp-small){
-    @include pad(0 5px);  
-  }
 }
 
 .category{
