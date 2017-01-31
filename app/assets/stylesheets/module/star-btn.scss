@@ -2,17 +2,11 @@
   border: 1px solid $light-gray;
   border-radius: 15px;
   background: asset-url('star.png') no-repeat center center;
-  @include size(90px 40px );
-  padding: 0px 0 0 24px;
+  @include size(100px 40px );
+  padding: 0px 0 0 36px;
   background-position-x: 5px;
-  background-size: 24px;
+  background-size: 36px;
   color: #ccc;
   line-height: 40px;
-  font-size: 18px;
-  @include media($bp-large){
-    @include size(126px 55px );
-    background-size: 40px;
-    padding: 0px 0 0 30px;
-    line-height: 55px;
-  }
+  font-size: 16px;
 }

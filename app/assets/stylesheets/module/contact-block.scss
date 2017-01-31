@@ -10,10 +10,10 @@
   &--btn{
     color: #fff;
     @include padding(14px 26px);
-    font-size: 18px;
-    @include media($bp-large){
-      font-size: 24px;
-      @include padding(20px 42px);
+  }
+  &--info{
+    small{
+      font-size: 14px;
     }
   }
   &--info span{
@@ -21,6 +21,12 @@
   }
   &--save{
     @include position(absolute, 0 0 null null);
+  }
+  &--photo{
+    &__img{
+      @include margin(0 5px);
+      width: 50px;
+    }
   }
 }
 

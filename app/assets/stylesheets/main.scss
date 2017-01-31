@@ -8,7 +8,6 @@ body {
 
   @media #{$mq-medium} {
     font-size: $base-font-size*1.4;
-    line-height: $base-line-height*1.4;
   }
 }
 
@@ -93,17 +92,7 @@ section.category--list{
     }
   }
 }
-.link-list{
-  @include padding(null null 3em null);
-    li{
-      padding-right: 15px;
-      @include inline-block;
-      a {
-        padding-right: 15px;
-        border-right: 2px solid $action-color;
-      }
-    }
-  }
+
 .categories-company-trust{
   h3.company-trust--title {
     text-align: center;
@@ -135,166 +124,41 @@ section.category--list{
   @include padding(null 75px null 75px);
 }
 // search results:
+.search{
+  .company-trust{
+    margin-top: 30px;
+    &--title{
+      text-align: center;
+      color: $light-gray;
+    }
+  }
+}
 section.service-title{
   border-radius: 15px 15px 0px 0px;
   border: 1px solid $border-color;
   border-bottom: none;
   @include background($container-background-color);
   @include outer-container;
-  h2{
-    padding: 15px 0px 0px 40px;
-  }
   section.aside-title{
     @include span-columns(3);
     @include omega();
     border-right: 1px solid $border-color;
-    h2{
-      color: #b1b1b1;
-      @include media(max-width $bp-large ){
-        font-size: 24px;
-        margin-bottom: 0;
-        padding: 17px 30px;
-      }      
+    h3{
+      color: #b1b1b1;  
+      font-size: 24px; 
+      margin: 0;
+      padding: 10px 0 10px 20px;
     }
   }
   section.search-result-title{
     @include span-columns(9);
-    h2{
+    h3{
       @include inline-block;
-      margin-right:40px;
-      padding-left: 150px;
-      @include media(max-width $bp-medium){
-        font-size: 24px; 
-      }
-      @include media(max-width $bp-large ){
-        font-size: 32px;
-        margin-bottom: 0;
-      }
-
+      padding: 10px 0 10px 80px;
+      font-size: 24px; 
+      margin: 0;
     }
   }
     clear: both;
 }
-.company-search-list{
-  margin-left: 2%;
-  section.company-item{
-    margin: 40px 0px 20px 0px;
-    padding: 30px;
-    @include media($bp-medium){
-      padding: 30px;
-    }
-    @include media($bp-large){
-      padding: 60px 30px 60px 50px;
-    }
-    background: #fff;
-    border: 1px solid $border-color;
-    border-radius: 25px;
-    @include outer-container;
-    h2.service-title{
-      @include inline-block;
-    }
-    .company-item-details{
-      @include outer-container;
-      @include clearfix;
-      .company-item-details-wrapper{
-        @include span-columns(7);
-        h2{
-          display: inline-block;
-          border-bottom: 5px solid $action-color;
-          font-size: 30px;
-          @include media($bp-large) {
-            font-size: 30px;
-          }
-          @include media($bp-large) {
-            font-size: 42px;
-          }
-         }
-        .company-info{
-          @include padding(null 20px);
-          &--adddress{
-            @include padding(20px null 0 null);
-            margin-bottom: 0px
-          }
-          &--tag{
-            display: block;
-            .btn--primary{
-              background-color: $action-color;
-              padding: 5px 10px;
-              margin-right: 40px;
-              border-radius: 3px;
-              border: 1px solid $border-color;
-              color: #fff;
-              font-size: 18px;
-              font-weight: normal;
-              @include media($bp-small){
-                margin-right: 10px;
-                padding: 5px;
-              }
-           }
-         }
-          &--building-type{
-            width: 100%;
-            .btn-ghost {
-              border: 1px solid #f92300;
-              border-radius: 3px;
-              padding: 5px 15px;
-              margin-right: 20px;
-              margin-bottom: 10px;
-              color: #000;
-              font-size: 14px;
-              @include inline-block;
-              @include media($bp-large){
-                padding: 5px 30px;
-              }
-              // &.scale{
-              //   border: 1px solid $border-color;
-              //   background-color: rgba(203,203,203,0.22);
-              // }
-            }
-          }
-          &--scale{
-            span{
-            @include inline-block;
-            color: $action-color;
-            font-size: 14px;
-            border-radius: 3px;
-            margin-right: 15px;
-            padding: 5px 18px;
-            border: 1px solid $border-color;
-            line-height: 18px;
-            text-align: center;
-            }
-          }
-        }
-      &--image{
-        padding: 0px;
-        @include span-columns(5);
-        @include omega();
-        img{
-          float: right;
-        }
-      }
-      }
-    &--intro{
-      margin-top: 40px;
-      clear: both;
-      @include outer-container;
-      article{
-        @include span-columns(9);
-      }
-      .save{
-        @include span-columns(2);
-        padding-left: 50px;
-        font-size: 24px;
-        width: 130px;
-        margin-left: 50px;
-        @include media(max-width $bp-large){
-          margin-left: 0;
-        }
-      }
-    }
-  }
-    
-  }
 
-}

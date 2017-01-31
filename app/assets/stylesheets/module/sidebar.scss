@@ -1,16 +1,18 @@
 .search-results-container{
   border: 1px solid $border-color;
   @include outer-container;
-  clear: both;
   @include background($container-background-color);
   aside{
     border-right: 1px solid $border-color;
     @include span-columns(3);
     @include omega();
+    min-height: 1400px;
+    position: relative;
     .search-fields{
-      padding: 40px 40px 80px 40px;
-      @include media(max-width $bp-large){
-        padding: 20px 20px 80px 20px;
+      padding: 0px 20px 0px 20px;      
+      @include clearfix;
+      &:first-of-type{
+        padding-top: 40px;
       }
       span{
         display: block;
@@ -34,22 +36,21 @@
           }
           &__text{
             border: 1px solid $border-color;
+            font-size: 18px;
           }
         }
         &--action{
           float: right;
           button{
             border: 1px solid $border-color;
-            border-radius: 25px;
-            background-color: rgba(203,203,203,0.22);
-            padding: 20px 30px;
+            border-radius: 14px;
+            background-color: rgba(203, 203, 203, 0.22);
+            padding: 10px 24px;
+            color: #999;
           }
 
           }
         }
-    }
-    hr{
-      clear: both;
     }
   }
   section.company-search-list{

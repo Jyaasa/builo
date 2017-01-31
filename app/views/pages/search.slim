@@ -1,9 +1,12 @@
 = render 'shared/header'
 section.search-results
   .container.padding-l-r
-    section.bread_crumbs
-      article
-        | 専門業者のご紹介 > 分野別　> 屋上防水
+    section.breadcrum  
+      =link_to "専門業者のご紹介", "#" 
+      | > 
+      = link_to "分野別", "#"
+      | > 
+      = link_to "屋上防水", "#"
     = render 'shared/conditions'
     section.filter
       span.filter--title
@@ -13,65 +16,66 @@ section.search-results
             | +
     section.service-title
       section.aside-title
-        h2
+        h3
           | 更に探す
       section.search-result-title
-        h2
+        h3
           | 屋上防水業者 
-        h2
+        h3
           | 外壁塗装
     section.search-results-container
       aside
-        .search-fields
-          form action=""
-          .form--field
-            input type="text" class= "form--field__text" placeholder= '屋上防水業者 '
-          .form--field
-            input type="text" class= "form--field__text" placeholder= '外壁塗装'
-          .form--field
-            input type="text" class= "form--field__text"
-          .form--field
-            input type="text" class= "form--field__text last"
-          .form--action
-            button.btn.btn--primary 探す
-        hr
-        .search-fields
-          h2
-            | 建物タイプ
-          span
-            | ビル
-          span
-            | マンション
-        hr
-        .search-fields
-          h2
-            | 建物規模
-          span
-            | 小規模
-          span
-            | 中規模
-          span
-            | 大規模
-        hr
-        .search-fields
-          h2
-            | キーワード検索
-          form action=""
-            .form--field
-              input type="text" class= "form--field__text"
-            .form--action
-              button.btn.btn--primary 探す
-        hr
-        .search-fields
-          h2
-            | 評価
-          span.evaluation
-            | 評価順
+        .aside--advance-search
+          .search-fields
+            form action=""
+              .form--field
+                input type="text" class= "form--field__text" placeholder= '屋上防水業者 '
+              .form--field
+                input type="text" class= "form--field__text" placeholder= '外壁塗装'
+              .form--field
+                input type="text" class= "form--field__text"
+              .form--field
+                input type="text" class= "form--field__text last"
+              .form--action
+                button.btn.btn--primary 探す
+          hr
+          .search-fields
+            h3
+              | 建物タイプ
+            span
+              | ビル
+            span
+              | マンション
+          hr
+          .search-fields
+            h3
+              | 建物規模
+            span
+              | 小規模
+            span
+              | 中規模
+            span
+              | 大規模
+          hr
+          .search-fields
+            h3
+              | キーワード検索
+            form action=""
+              .form--field
+                input type="text" class= "form--field__text"
+              .form--action
+                button.btn.btn--primary 探す
+          hr
+          .search-fields
+            h3
+              | 評価
+            span.evaluation
+              | 評価順
       section.company-search-list
         section.company-item
           section.company-item-details
             section.company-item-details-wrapper
-              h2.company-item--title
+              h3.company-item--title
                 | 田中防水工事株式会社
               section.company-info
                 p.company-info--adddress
@@ -107,7 +111,7 @@ section.search-results
         section.company-item
           section.company-item-details
             section.company-item-details-wrapper
-              h2.company-item--title
+              h3.company-item--title
                 | 田中防水工事株式会社
               section.company-info
                 p.company-info--adddress
@@ -143,7 +147,7 @@ section.search-results
         section.company-item
           section.company-item-details
             section.company-item-details-wrapper
-              h2.company-item--title
+              h3.company-item--title
                 | 田中防水工事株式会社
               section.company-info
                 p.company-info--adddress

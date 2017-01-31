@@ -19,11 +19,11 @@ section
             li.nav-link
               =link_to "ログイン", "#"
   = render 'shared/search-bar'
-  section.categories.container
-    h2
+  section.container
+    h4
       | 専門業者のご紹介
     section.menu-container
-      h2
+      h4
         | 分野別
       section.category-menu
         ul.category-menu--list
@@ -47,7 +47,7 @@ section
             = link_to "総合ソリューション", "#"
     section.category--list
       section.category-left
-        h1
+        h3
           | 電気設備
         ul.link-list
           li
@@ -60,7 +60,7 @@ section
             = link_to "電話工事", "#"
           li
             = link_to "太陽光発電工事", "#"
-        h1
+        h3
           |水道空調衛生設備
         ul.link-list
           li
@@ -77,7 +77,7 @@ section
             = link_to "ビルピット", "#"
           li
             = link_to "ボイラー", "#"
-        h1
+        h3
           | 防災設備・防犯設備
         ul.link-list
           li
@@ -94,7 +94,7 @@ section
             = link_to "インターホン工事", "#"
           li
             = link_to "シャッター", "#"
-        h1
+        h3
           | エレベータ・他
         ul.link-list
           li
@@ -109,7 +109,7 @@ section
             = link_to "機械式駐車場", "#"
     
       section.category-right
-        h1
+        h3
           | 屋上防水・建物
         ul.link-list
           li
@@ -128,7 +128,7 @@ section
             = link_to "耐震工事", "#"
           li
             = link_to "制震免震工事", "#"
-        h1
+        h3
           | 内装工事
         ul.link-list
           li
@@ -141,7 +141,7 @@ section
             = link_to "貸室原状回復工事", "#"
           li
             = link_to "居住用貸室リフォーム工事", "#"
-        h1
+        h3
           | 建物管理
         ul.link-list
           li
@@ -165,7 +165,7 @@ section
           li
             = link_to "害虫駆除", "#"
           li
-        h1
+        h3
           | 専門
         ul.link-list
           li
@@ -178,6 +178,6 @@ section
             = link_to "高所ガラス清掃", "#"
           li
             = link_to "貯水槽清掃点検", "#"
-        h1
+        h3
           | 総合ソリューション
   = render 'shared/conditions'

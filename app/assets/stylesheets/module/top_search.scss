@@ -1,14 +1,13 @@
-.top-search{
-  @include size(100% 80px);
+.home .top-search{
   @include position(absolute, 60px 0 0 0);
+}
+.top-search{
+  @include size(100% 62px);
+  @include position(relative, null);
   background: #3E3E3E;
-
-  @include media($bp-small){
-    @include size(100% 60px);
-  }    
   .search{
     .form{
-      @include padding(null null null em(60));
+      @include padding(null null null em(50));
       @include media(max-width $bp-medium){
         padding-left: 0;
       }
@@ -22,7 +21,7 @@
         }
         @include inline-block;
         &__text{
-          @include size(13em 2.6em);
+          @include size(auto 1.8em);
           margin-bottom: 0px;
           @include media(max-width $bp-small){
             @include size(10em/1.2 2em);
@@ -33,21 +32,10 @@
         @include inline-block;
         .btn--primary{
           margin-left: 15px;
-          padding: 16px 36px;
-          @include border-top-radius(15px);
-          @include border-right-radius(15px);
-          @include border-bottom-radius(15px);
-          @include border-left-radius(15px);
+          padding: 10px 32px;
+          border-radius: 15px;
           border: 1px solid #95989A;
-          font-size: 30px;
-          @include media(max-width $bp-large){
-            padding: 16px 24px;
-            font-size: 24px;
-          }
-          @include media(max-width $bp-medium){
-            padding: 12px 24px;
-            font-size: 20px;
-          }          
+          font-size: 22px;      
         }
       }
     }

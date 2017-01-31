@@ -1,0 +1,105 @@
+.company-search-list{
+  margin-left: 2%;
+  section.company-item{
+    margin: 40px 0px 20px 0px;
+    padding: 30px 50px;
+    background: #fff;
+    border: 1px solid $border-color;
+    border-radius: 25px;
+    @include outer-container;
+    h2.service-title{
+      @include inline-block;
+    }
+    .company-item-details{
+      @include outer-container;
+      @include clearfix;
+      .company-item-details-wrapper{
+        @include span-columns(7);
+        h3{
+          display: inline-block;
+          border-bottom: 2px solid $action-color;
+          font-size: 28px;
+         }
+        .company-info{
+          @include padding(null 20px);
+          &--adddress{
+            @include padding(20px null 0 null);
+            margin-bottom: 0px
+          }
+          &--tag{
+            display: block;
+            .btn--primary{
+              background-color: $action-color;
+              padding: 5px 10px;
+              margin-right: 40px;
+              border-radius: 3px;
+              border: 1px solid $border-color;
+              color: #fff;
+              font-size: 16px;
+              font-weight: normal;
+              @include media($bp-small){
+                margin-right: 10px;
+                padding: 5px;
+              }
+           }
+         }
+          &--building-type{
+            width: 100%;
+            .btn-ghost {
+              border: 1px solid #f92300;
+              border-radius: 3px;
+              padding: 5px 15px;
+              margin-right: 7px;
+              margin-bottom: 5px;
+              color: #000;
+              font-size: 14px;
+              @include inline-block;
+              // &.scale{
+              //   border: 1px solid $border-color;
+              //   background-color: rgba(203,203,203,0.22);
+              // }
+            }
+          }
+          &--scale{
+            span{
+            @include inline-block;
+            color: $action-color;
+            font-size: 12px;
+            border-radius: 3px;
+            margin-right: 10px;
+            padding: 1px 14px;
+            border: 1px solid $border-color;
+            line-height: 14px;
+            text-align: center;
+            }
+          }
+        }
+      &--image{
+        padding: 0px;
+        @include span-columns(5);
+        @include omega();
+        img{
+          float: right;
+        }
+      }
+      }
+    &--intro{
+      margin-top: 40px;
+      @include outer-container;
+      article{
+        @include span-columns(9);
+        color: #95989A;
+      }
+      .save{
+        @include span-columns(2);
+        padding-left: 42px;
+        font-size: 18px;
+        width: 100px;
+        margin-left: 30px;
+      }
+    }
+  }
+    
+  }
+
+}

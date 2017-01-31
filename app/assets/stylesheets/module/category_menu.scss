@@ -1,44 +1,64 @@
 .categories{
-  margin-top: 40px;
-  h2{
-    font-size: 24px;
-    margin-bottom: 15px;
-    &:first-of-type{
-      margin-right: 0;
+  h4{
+    margin-top: 30px;
+  }
+  .menu-container{  
+    h4{
+      margin-top: 0;
+      margin-bottom: 0;
+      &:first-of-type{
+        margin-right: 0;
+      }
     }
-    @include media($bp-large){
-      font-size: 32px;
+  }
+  .company-trust{
+    &--title{
+      text-align: center;
+    }
+    &--list{
+      h4{
+        margin-top: 0;
+        font-weight: normal;
+      }
     }
   }
 }
 .menu-container{
   background: #f8f8f8;
-  // @include margin(1em null);
-  @include border-top-radius(37px);
-  @include border-right-radius(37px);
-  @include border-bottom-radius(37px);
-  @include border-left-radius(37px);
+  border-radius: 25px;
   border: 1px solid $base-border-color;
-  @include padding(1em);
+  @include padding(0.5em 1em);
 
 }
 .category-menu{
   li{
     @include padding(null 1em);
     @include inline-block;
-    font-size: 22px;
-    @include media($bp-large){
-      font-size: 24px;
+    font-size: 18px;
+    &:first-of-type{
+      padding-left: 0;
+    }
+    a{
+      color: $action-color;
     }
   }
 }
 .link-list{
-  li{
-    a{
-      font-size: 22px;
-      @include media($bp-large){
-        font-size: 28px;  
+  @include padding(null null 2em null);
+    li{
+      padding-right: 15px;
+      @include inline-block;
+      a {
+        padding-right: 15px;
+        border-right: 2px solid $action-color;
+        font-size: 18px;
+        color: $action-color;
       }
     }
+}
+.category--list{
+  @include clearfix;
+  h3{
+    color: $action-color;
   }
 }
