@@ -8,6 +8,9 @@
   </head>
 
   <body class="<%= page_title %>">
+    <% if page_title != 'home'%>
+      <%= render 'shared/header'%>
+    <%end%>
     <%= yield %>
   </body>
 </html>

@@ -19,6 +19,9 @@
           display: inline-block;
           border-bottom: 2px solid $action-color;
           font-size: 28px;
+          a {
+            color: #000;
+          }
          }
         .company-info{
           @include padding(null 20px);

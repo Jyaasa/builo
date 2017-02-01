@@ -17,13 +17,4 @@ section.container
             =link_to "登録する", "#"
           li.nav-link
             =link_to "ログイン", "#"
-section.top-search
-  .search.container
-    .search--form.form
-      form action=""
-        .form--field
-          input type="text" class= "form--field__text"
-        .form--field
-          input type="text" class= "form--field__text"
-        .form--action
-          button.btn.btn--primary 探す
+= render 'shared/search-bar'
