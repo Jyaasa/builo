@@ -12,23 +12,23 @@ section.container.modal#my_modal
         li.nav-link
           =link_to "概要", "#"
         li.nav-link
-          =link_to "サポート", "#"
+          =link_to "サポート", "#サポート", data:{turbolinks: 'false'}
         li.nav-link
-          =link_to "実績", "#"
+          =link_to "実績", "#実績", data:{turbolinks: 'false'}
         li.nav-link
-          =link_to "評判", "#"
+          =link_to "評判", "#評判", data:{turbolinks: 'false'}
     section.about
       h1
         |あかさ防水工業株式会社
       section.about--company
         .info
-          .info--label 営業地域：
+          .info--label 営業地域:
           .info--description 東京都　神奈川県、埼玉県一部
         .info
-          .info--label 主事業内容：
+          .info--label 主事業:
           .info--description 屋上防水　外壁防水　防水調査・診断　漏水診断　外壁診断
         .info
-          .info--label 営業地域：
+          .info--label 技術者:
           .info--description.line
             ul
               li 防水施工技能士1級　防水施工技能士2級
@@ -48,6 +48,7 @@ section.container.modal#my_modal
             | あかさ防水工業は多くのお取引先様や協力会社様に支えられ、創業以来防水工事一筋に実績と経験を培ってまいりました。長年培った実績と信頼に応えるべく、最近では長期保証にも積極的に取り組んでいます。防水工事のご相談は、いつでもお気軽にお問い合わせください。
       hr
     section.policy
+      a name="サポート"
       h3 工事・サポート方針
       .policy--detail
         ul.policy--detail__item.cost
@@ -83,7 +84,7 @@ section.container.modal#my_modal
       
       .policy--document
         .info
-          .info--label 営業地域：
+          .info--label 完了時：
           .info--description 工事終了後は速やかに工事完了報告書を提出します。
         .info
           .info--label アフターサポート方針：
@@ -100,6 +101,7 @@ section.container.modal#my_modal
       .contact--save.star
         |保 存
     section.performance
+      a name="実績"
       .performance--title
         | 実績
       .performance--photos.photos
@@ -140,6 +142,7 @@ section.container.modal#my_modal
         |保 存
     
     section.review
+      a name="評判"
       .review--title
         |評判 10件　
         span.review--title__stars
@@ -236,9 +239,9 @@ section.container.modal#my_modal
   section.company-infomation
     .building
       .building--type
-        button.building--type__btn
+        .building--type__btn
           |屋上防水
-        button.building--type__btn
+        .building--type__btn
           |外壁塗装
       .building--target
         label.building--target__label 対象建物
@@ -246,7 +249,7 @@ section.container.modal#my_modal
           .building--target__tag
             |ビル
           .building--target__tag
-            マンション
+            |マンション
       .building--size
         label.building--target__label 対象建物
         .building--size-group
