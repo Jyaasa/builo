@@ -22,11 +22,19 @@
     &--field{
       @include padding(0 2%);
       @include inline-block;
-      width: 40%;
+      &:first-child{
+        width: 55%;
+      }
+      &:nth-child(2n){
+        width: 30%;
+        padding-left:0 ;
+      }
       &__text{
         @include size (100% 60px);
         @include border-color(#95989A);
         margin-bottom: 0;
+        font-size: 16px;
+        padding-left: 16px;
         @include media(max-width $bp-medium){
           @include size(100% 60px);
         }     
