@@ -2,37 +2,40 @@
   section.company-popup
     span.close
       | &times;
-    section.company-popup--image
-      = image_tag 'building-img2.png', id: 'company-img'
-    section.company-popup--building-info
-      h3
-        | ○○ビル　築40年　屋上防水及び鉄部塗塗装
-      h3
-        | 工事前の状況
-      article.company-popup--building-info__details
-        p
-          | アスファルト防水。以前に一度屋上防水工事をしているという話だが記録がない。現状は防水層まで達している亀裂が多数見られ、いつ漏水事故が起こってもおかしくない状態だった。
-      h3
-        | 工法の選択
-      article.company-popup--building-info__details
-        p
-          | 入居テナントビジネスへの影響を考えて、音と振動のあるアスファルト防水ではなくシート防水を選択
-      h3
-        | 入居者対応
-      article.company-popup--building-info__details
-        p
-          | 工事スケジュール計画にあたっては、入居テナントのビジネスを邪魔しないよう先に都合をヒアリングしたところ、一般事務所が平日昼間不可に加えて、受験予備校テナントが夜間及び土日不可と判明
-          | br/
-          | 資材搬入を深夜に行い工事は昼間に時間分散させた。
-      h3
-        | 工事の進行及びトラブル
-      article.company-popup--building-info__details
-        p
-          | 特にトラブルはなく計画通りに終了。広告塔の足元及び空調室外機置き場足元は、は特に丁寧に工事をする。
-      h3
-        | 工事後
-      span.read-more
-        | もっと読む
+    section.company-info
+      section.company-popup--image
+        = image_tag 'pop-img.png', id: 'company-img'
+      section.company-popup--building-info
+        .company-popup--block
+          h4
+            | ○○ビル　築40年　屋上防水及び鉄部塗塗装
+          .buiding-info--list  
+            h4
+              | 工事前の状況
+            p.company-popup--building-info__details
+              | アスファルト防水。以前に一度屋上防水工事をしているという話だが記録がない。現状は防水層まで達している亀裂が多数見られ、いつ漏水事故が起こってもおかしくない状態だった。
+          .buiding-info--list
+            h4
+              | 工法の選択
+            p.company-popup--building-info__details
+              | 入居テナントビジネスへの影響を考えて、音と振動のあるアスファルト防水ではなくシート防水を選択
+          .buiding-info--list
+            h4
+              | 入居者対応
+            p.company-popup--building-info__details
+              | 工事スケジュール計画にあたっては、入居テナントのビジネスを邪魔しないよう先に都合をヒアリングしたところ、一般事務所が平日昼間不可に加えて、受験予備校テナントが夜間及び土日不可と判明
+              | br/
+              | 資材搬入を深夜に行い工事は昼間に時間分散させた。
+          .buiding-info--list
+            h4
+              | 工事の進行及びトラブル
+            p.company-popup--building-info__details          
+              | 特にトラブルはなく計画通りに終了。広告塔の足元及び空調室外機置き場足元は、は特に丁寧に工事をする。
+          .buiding-info--list
+            h4
+              | 工事後            
+          .read-more
+            | もっと読む
     section.company-images
       ul
         li.comany-images--list  
@@ -46,4 +49,8 @@
         li.comany-images--list  
           = image_tag 'building-img6.png', class:'current-image', id: 'company-image-5'
         li.comany-images--list  
-          = image_tag 'building-img2.png', class:'current-image', id: 'company-image-6'
+          = image_tag 'building-img2.png', class:'current-image', id: 'company-image-6'          
+        li.comany-images--list  
+          = image_tag 'building-img2.png', class:'current-image', id: 'company-image-6'          
+        li.comany-images--list  
+          = image_tag 'building-img2.png', class:'current-image', id: 'company-image-6'          
