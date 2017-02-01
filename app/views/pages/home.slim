@@ -4,7 +4,7 @@ section.container
     header.navigation role="banner" 
       .navigation-wrapper
         .logo
-          =image_tag "logo.png"
+          = link_to image_tag("logo.png"), "/" 
         ul.left-menu
           li
             =link_to "さがす", categories_path
