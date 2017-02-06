@@ -134,7 +134,7 @@ section.category--list{
   }
 }
 section.service-title{
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
   border: 1px solid $border-color;
   border-bottom: none;
   @include background($container-background-color);
@@ -154,7 +154,7 @@ section.service-title{
     @include span-columns(9);
     h3{
       @include inline-block;
-      padding: 10px 0 10px 80px;
+      padding: 10px 0 10px 30px;
       font-size: 24px; 
       margin: 0;
     }

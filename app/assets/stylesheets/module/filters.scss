@@ -1,7 +1,7 @@
 .filter{
   @include outer-container;
   @include background($container-background-color);
-  border-radius: 37px;
+  border-radius: 5px;
   padding: 5px 20px;
   border: 1px solid $border-color;
     @include span-columns(12);
