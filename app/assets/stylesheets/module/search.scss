@@ -23,7 +23,7 @@
       @include padding(0 2%);
       @include inline-block;
       &:first-child{
-        width: 55%;
+        width: 54%;
       }
       &:nth-child(2n){
         width: 30%;

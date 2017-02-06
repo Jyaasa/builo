@@ -1,5 +1,6 @@
 .hero{
   background:  asset-url('banner.png') center center no-repeat;
+  background-position: 30% 20%;
   background-size: cover;
   @include size(100% 28em);
   @include media(max-width $bp-medium){
