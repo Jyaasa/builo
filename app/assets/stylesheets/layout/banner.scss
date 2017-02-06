@@ -2,7 +2,7 @@
   background:  asset-url('banner.png') center center no-repeat;
   background-position: 30% 20%;
   background-size: cover;
-  @include size(100% 28em);
+  @include size(100% 32em);
   @include media(max-width $bp-medium){
     @include size(100% 37em);
   }
