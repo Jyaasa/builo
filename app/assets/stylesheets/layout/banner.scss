@@ -4,7 +4,7 @@
   background-size: cover;
   @include size(100% 32em);
   @include media(max-width $bp-medium){
-    @include size(100% 37em);
+    @include size(100% 44em);
   }
 }
 .l-banner
