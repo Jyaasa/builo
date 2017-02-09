@@ -30,12 +30,14 @@
       }
       &--action{
         @include inline-block;
+        vertical-align: top;
+        padding: 0.5em 0;
         .btn--primary{
           margin-left: 15px;
-          padding: 10px 32px;
+          padding: 9px 32px;
           border-radius: 15px;
           border: 1px solid #95989A;
-          font-size: 22px;      
+          font-size: 20px;      
         }
       }
     }

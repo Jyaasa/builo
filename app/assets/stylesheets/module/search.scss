@@ -43,6 +43,7 @@
     &--action{
       @include inline-block;
       @include padding(0 0 0 2%);
+      vertical-align: top;
       .btn{
         &--primary{
           @include size (auto 60px);
