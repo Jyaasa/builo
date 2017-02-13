@@ -20,9 +20,20 @@
           @include padding(em(10) em(10) null);
         }
         @include inline-block;
+        &:first-child{
+          width: 340px;
+        }
+        &:nth-child(2n){
+          width: 200px;
+        }
         &__text{
-          @include size(auto 1.8em);
+          @include size(100% 40px);
           margin-bottom: 0px;
+          font-size: 14px;
+          @include padding(null 16px);
+          @include media(max-width $bp-medium){
+            font-size: 1.4em;
+          }
           @include media(max-width $bp-small){
             @include size(10em/1.2 2em);
           }

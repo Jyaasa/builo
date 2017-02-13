@@ -22,7 +22,7 @@ header.navigation {
       max-height: $navigation-height;
       padding: 0.1em 0;
       @include media (max-width $bp-medium){
-        padding: 1em 0;
+        padding: 0.3em 0;
       }
     }
   }
