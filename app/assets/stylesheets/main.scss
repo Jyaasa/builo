@@ -142,20 +142,18 @@ section.service-title{
     @include span-columns(3);
     @include omega();
     border-right: 1px solid $border-color;
-    h3{
-      color: #b1b1b1;  
-      font-size: 24px; 
-      margin: 0;
-      padding: 10px 0 10px 20px;
-    }
+    height: 41px;
   }
   section.search-result-title{
     @include span-columns(9);
     h3{
       @include inline-block;
       padding: 10px 0 10px 30px;
-      font-size: 24px; 
+      font-size: 18px; 
       margin: 0;
+      span{
+        margin: 0 30px;
+      }
     }
   }
     clear: both;

@@ -29,11 +29,11 @@
       {
         color: #3E3E3E
       }
+      label{
+        font-weight: normal;
+      }
       .form{
         &--field{
-          .last{
-            margin-top: 40px;
-          }
           &__text{
             border: 1px solid $border-color;
             font-size: 18px;
@@ -48,15 +48,14 @@
             padding: 10px 24px;
             color: #999;
           }
-
-          }
         }
+      }
     }
   }
   section.company-search-list{
     @include span-columns(9);
     @include omega();
-    @include padding(null em(40) null em(20));
+    @include padding(null em(15) null null);
   }
   clear: both;
 }

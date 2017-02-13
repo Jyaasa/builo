@@ -12,18 +12,18 @@ section.search-results
           | すべて信頼３条件を満たした信頼できる専門業者です。安心してお問い合わせできます。
     section.service-title
       section.aside-title
-        h3
-          | 更に探す
       section.search-result-title
         h3
-          | カテゴリー：　屋上防水工事
+          | 検索結果　：
         h3
-          | 外壁塗装
+          span  外壁塗装
+          span　屋上防水工事
     section.search-results-container
       aside
         .aside--advance-search
           .search-fields
             form action=""
+              label カテゴリー：
               .form--field
                 input type="text" class= "form--field__text" placeholder= '屋上防水業者 '
               .form--field
@@ -31,9 +31,10 @@ section.search-results
               .form--field
                 input type="text" class= "form--field__text" placeholder= 'カテゴリー'
               .form--field
-                input type="text" class= "form--field__text last"
+                label 地域：
+                input type="text" class= "form--field__text" placeholder="地域"
               .form--action
-                button.btn.btn--primary 探す
+                button.btn.btn--primary 再検索
           hr
           .search-fields
             h3
@@ -68,105 +69,142 @@ section.search-results
               h3.company-item--title
                 = link_to '田中防水工事株式会社', company_show_path
               section.company-info
-                p.company-info--adddress
-                  | 東京都世田谷区世田谷１−１
                 .company-info--tag
                   =link_to '屋上防水 ', '#', class: 'btn btn--primary'
                   =link_to '外壁塗装', '#' , class: 'btn btn--primary'
                   =link_to '太陽発電', '#' , class: 'btn btn--primary'
-                section.company-info--building-type
-                  = link_to 'ビル', "#", class: 'btn btn-ghost'
-                  = link_to 'マンション', "#", class: 'btn btn-ghost'
-                section.company-info--scale
-                  span 
-                    | 小
-                    br/
-                    | 規模
-                  span 
-                    | 中
-                    br/
-                    | 規模
-                  span 
-                    | 大
-                    br/
-                    | 規模 
+                .company-info--group
+                  section.company-info--building-type
+                    = link_to 'ビル', "#", class: 'btn btn-ghost'
+                    = link_to 'マンション', "#", class: 'btn btn-ghost'
+                  section.company-info--scale
+                    span 
+                      | 小
+                      br/
+                      | 規模
+                    span 
+                      | 中
+                      br/
+                      | 規模
+                    span 
+                      | 大
+                      br/
+                      | 規模 
+                  section.save.star.company-info--star
+                   | 保 存
+
+                p.company-info--desc
+                  | 当社は屋上防水工事・塗装工事のアフターサービス体制が万全です。自社で施工スタッフ30名が在籍しており、すべて自社で直接施工を行います。最近では若い技能士も自社で育てています。工法及び保證内容について...
             section.company-item-details-wrapper--image
               =image_tag "scompay_img.png", class: ''
-          section.company-item-details--intro
-            article
               p
-                | 当社は屋上防水工事・塗装工事のアフターサービス体制が万全です。自社で施工スタッフ30名が在籍しており、すべて自社で直接施工を行います。最近では若い技能士も自社で育てています。工法及び保證内容について、事前に十分にご説明をいたします。お気軽にお問い合わせください。
-            section.save.star
-             | 保 存
+                | 東京都世田谷区世田谷１−１              
         section.company-item data-link='company/show'
           section.company-item-details
             section.company-item-details-wrapper
               h3.company-item--title
                 = link_to '田中防水工事株式会社', company_show_path
               section.company-info
-                p.company-info--adddress
-                  | 東京都世田谷区世田谷１−１
                 .company-info--tag
                   =link_to '屋上防水 ', '#', class: 'btn btn--primary'
                   =link_to '外壁塗装', '#' , class: 'btn btn--primary'
                   =link_to '太陽発電', '#' , class: 'btn btn--primary'
-                section.company-info--building-type
-                  = link_to 'ビル', "#", class: 'btn btn-ghost'
-                  = link_to 'マンション', "#", class: 'btn btn-ghost'
-                section.company-info--scale
-                  span 
-                    | 小
-                    br/
-                    | 規模
-                  span 
-                    | 中
-                    br/
-                    | 規模
-                  span 
-                    | 大
-                    br/
-                    | 規模  
+                .company-info--group
+                  section.company-info--building-type
+                    = link_to 'ビル', "#", class: 'btn btn-ghost'
+                    = link_to 'マンション', "#", class: 'btn btn-ghost'
+                  section.company-info--scale
+                    span 
+                      | 小
+                      br/
+                      | 規模
+                    span 
+                      | 中
+                      br/
+                      | 規模
+                    span 
+                      | 大
+                      br/
+                      | 規模 
+                  section.save.star.company-info--star
+                   | 保 存
+
+                p.company-info--desc
+                  | 当社は屋上防水工事・塗装工事のアフターサービス体制が万全です。自社で施工スタッフ30名が在籍しており、すべて自社で直接施工を行います。最近では若い技能士も自社で育てています。工法及び保證内容について...
             section.company-item-details-wrapper--image
               =image_tag "scompay_img.png", class: ''
-          section.company-item-details--intro
-            article
               p
-                | 当社は屋上防水工事・塗装工事のアフターサービス体制が万全です。自社で施工スタッフ30名が在籍しており、すべて自社で直接施工を行います。最近では若い技能士も自社で育てています。工法及び保證内容について、事前に十分にご説明をいたします。お気軽にお問い合わせください。
-            section.save.star
-             | 保 存
+                | 東京都世田谷区世田谷１−１              
         section.company-item data-link='company/show'
           section.company-item-details
             section.company-item-details-wrapper
               h3.company-item--title
                 = link_to '田中防水工事株式会社', company_show_path
               section.company-info
-                p.company-info--adddress
-                  | 東京都世田谷区世田谷１−１
                 .company-info--tag
                   =link_to '屋上防水 ', '#', class: 'btn btn--primary'
                   =link_to '外壁塗装', '#' , class: 'btn btn--primary'
                   =link_to '太陽発電', '#' , class: 'btn btn--primary'
-                section.company-info--building-type
-                  = link_to 'ビル', "#", class: 'btn btn-ghost'
-                  = link_to 'マンション', "#", class: 'btn btn-ghost'
-                section.company-info--scale
-                  span 
-                    | 小
-                    br/
-                    | 規模
-                  span 
-                    | 中
-                    br/
-                    | 規模
-                  span 
-                    | 大
-                    br/
-                    | 規模 
+                .company-info--group
+                  section.company-info--building-type
+                    = link_to 'ビル', "#", class: 'btn btn-ghost'
+                    = link_to 'マンション', "#", class: 'btn btn-ghost'
+                  section.company-info--scale
+                    span 
+                      | 小
+                      br/
+                      | 規模
+                    span 
+                      | 中
+                      br/
+                      | 規模
+                    span 
+                      | 大
+                      br/
+                      | 規模 
+                  section.save.star.company-info--star
+                   | 保 存
+
+                p.company-info--desc
+                  | 当社は屋上防水工事・塗装工事のアフターサービス体制が万全です。自社で施工スタッフ30名が在籍しており、すべて自社で直接施工を行います。最近では若い技能士も自社で育てています。工法及び保證内容について...
             section.company-item-details-wrapper--image
               =image_tag "scompay_img.png", class: ''
-          section.company-item-details--intro
-            article
               p
-                | 当社は屋上防水工事・塗装工事のアフターサービス体制が万全です。自社で施工スタッフ30名が在籍しており、すべて自社で直接施工を行います。最近では若い技能士も自社で育てています。工法及び保證内容について、事前に十分にご説明をいたします。お気軽にお問い合わせください。
-            section.save.star
-             | 保 存
+                | 東京都世田谷区世田谷１−１              
+        section.company-item data-link='company/show'
+          section.company-item-details
+            section.company-item-details-wrapper
+              h3.company-item--title
+                = link_to '田中防水工事株式会社', company_show_path
+              section.company-info
+                .company-info--tag
+                  =link_to '屋上防水 ', '#', class: 'btn btn--primary'
+                  =link_to '外壁塗装', '#' , class: 'btn btn--primary'
+                  =link_to '太陽発電', '#' , class: 'btn btn--primary'
+                .company-info--group
+                  section.company-info--building-type
+                    = link_to 'ビル', "#", class: 'btn btn-ghost'
+                    = link_to 'マンション', "#", class: 'btn btn-ghost'
+                  section.company-info--scale
+                    span 
+                      | 小
+                      br/
+                      | 規模
+                    span 
+                      | 中
+                      br/
+                      | 規模
+                    span 
+                      | 大
+                      br/
+                      | 規模 
+                  section.save.star.company-info--star
+                   | 保 存
+
+                p.company-info--desc
+                  | 当社は屋上防水工事・塗装工事のアフターサービス体制が万全です。自社で施工スタッフ30名が在籍しており、すべて自社で直接施工を行います。最近では若い技能士も自社で育てています。工法及び保證内容について...
+            section.company-item-details-wrapper--image
+              =image_tag "scompay_img.png", class: ''
+              p
+                | 東京都世田谷区世田谷１−１              
+                
