@@ -17,6 +17,24 @@
       }
     }
   }
+  .diagram{
+    @include outer-container;
+    @include shift(2);
+    margin-top: 45px;
+    &--chart{
+      text-align: center;
+      @include span-columns(4);
+      @include omega;
+      margin-left: 0;
+      margin-top: 0;
+      &__title{
+        font-size: 16px;
+      }
+    }
+    img{
+      margin-top: 30px;
+    }
+  }
   .about{
     &--heading{
       @include outer-container;
@@ -191,7 +209,6 @@
       &:last-child{
         display: block;
         width: 100%;
-        margin-top: 15px;
       }  
     }
   }
