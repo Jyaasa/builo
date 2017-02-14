@@ -18,8 +18,12 @@ section.container.modal#my_modal
         li.nav-link
           =link_to "評判", "#評判", data:{turbolinks: 'false'}
     section.about
-      h1
-        |あかさ防水工業株式会社
+      .about--heading
+        .about--heading-logo
+          =image_tag"company-logo.png"
+        .about--heading-name
+          h1
+            |あかさ防水工業株式会社
       section.about--company
         .info
           .info--label 営業地域:

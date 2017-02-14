@@ -12,16 +12,33 @@
       }
       a{
         color: #626262;
-        font-size: 20px;
+        font-size: 28px;
+        font-weight: bold;
       }
     }
   }
   .about{
-    h1{
-      @include margin(50px 0);   
-      border-bottom: 3px solid $action-color; 
-      @include inline-block;
+    &--heading{
+      @include outer-container;
+    }
+    &--heading-logo{
+      @include span-columns(2);
+      img{
+        margin-top: 32px;
       }
+    }
+    &--heading-name{
+      @include span-columns(10);
+      @include omega;
+      h1{
+        @include margin(50px 0);   
+        border-bottom: 3px solid $action-color; 
+        @include inline-block;
+        font-weight: bold;
+        margin-left: 36px;
+      }
+    }
+
     &--company{
       color: #8B8B8B;
       line-height: 24px;
