@@ -1,19 +1,16 @@
 .l-banner
   .search{
-    @include margin(130px auto 0 auto);
-    @include size(100% 0);
     h2{
-      
-      font-size: 70px;
-      font-weight: normal;
+      font-size: 74px;
       text-shadow: 1px 1px 0px #fff, -1px -1px 0px #fff;
+      font-weight: bold;
       @include media($bp-small){
         font-size: 62px;
         @include margin(null null 20px 7%);
       }         
       @include media($bp-medium){
         font-size: 72px;
-        @include margin(null null 20px 15%);
+        @include margin(null null 30px 10%);
       }
     }
   .form{

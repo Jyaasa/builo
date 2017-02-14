@@ -1,5 +1,6 @@
 .home .top-search{
   @include position(absolute, 60px 0 0 0);
+  height: 5px;
 }
 .top-search{
   @include size(100% 62px);
