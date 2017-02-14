@@ -45,7 +45,7 @@
       font-size: 16px;
     .info{
       @include outer-container;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       &--label{
         @include span-columns(2)
       }

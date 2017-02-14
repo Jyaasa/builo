@@ -26,6 +26,11 @@
     &__img{
       @include margin(0 5px);
       width: 50px;
+      display: inline-block;
+      font-size: 14px;  
+    }
+    figcaption{
+      line-height: 10px;
     }
   }
 }

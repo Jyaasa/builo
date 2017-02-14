@@ -24,21 +24,11 @@ section.container.modal#my_modal
         .about--heading-name
           h1
             |あかさ防水工業株式会社
+
       section.about--company
         .info
-          .info--label 営業地域:
-          .info--description 東京都　神奈川県、埼玉県一部
-        .info
-          .info--label 主事業:
-          .info--description 屋上防水　外壁防水　防水調査・診断　漏水診断　外壁診断
-        .info
-          .info--label 技術者:
-          .info--description.line
-            ul
-              li 防水施工技能士1級　防水施工技能士2級
-              li １級建築施工管理技士　２級建築施工管理技士
-      
-      section.about--company
+          .info--label 特徴：
+          .info--description 学校・公共施設から小規模マンションまで、屋上防水と建物外壁修繕のエキスパートです。
         .info
           .info--label 強み：
           .info--description 
@@ -87,9 +77,21 @@ section.container.modal#my_modal
             span.sm-circle
       
       .policy--document
+        .info 
+          .info--label 事前説明：
+          .info--description
+            ul 
+              li 当社技術者が現場を確認して、状況をわかりやすくご説明します。
+              li 対応方針は、ご納得できるまでなんどでも検討し、ご説明をいたします。
+        .info
+          .info--label 工事方針：
+          .info--description
+            ul 
+              li 工事に際しては、テナント様及び近隣には最大の配慮を配ります、
+              li 変更が生じた場合には、速やかにご報告及びご相談を申し上げます。
         .info
           .info--label 完了時：
-          .info--description 工事終了後は速やかに工事完了報告書を提出します。
+          .info--description 工事完了時立会い検査で気がついたことがありましたら、ご遠慮なくご指摘ください。すぐに対応をいたします。
         .info
           .info--label アフターサポート方針：
           .info--description 
@@ -248,14 +250,14 @@ section.container.modal#my_modal
         .building--type__btn
           |外壁塗装
       .building--target
-        label.building--target__label 対象建物
+        label.building--target__label.label 対象建物
         .building--target__tag-group
           .building--target__tag
             |ビル
           .building--target__tag
             |マンション
       .building--size
-        label.building--target__label 対象建物
+        label.building--target__label.label 対象建物
         .building--size-group
           .building--size__type
             |小
@@ -269,14 +271,26 @@ section.container.modal#my_modal
             |大
             br/
             |規模
+      .building--area
+        .building--area-label
+          label.label 営業地域
+        .building--area-places
+          span 東京都
+          span 神奈川県、
+          span 埼玉県一部
+
     .contact
       .contact--action
         button.contact--btn 問い合わせ
         .contact--info
           small 私たちが１営業日以内に返信します
       .contact--photo
-        =image_tag "contact-img.png", class:'contact--photo__img'
-        =image_tag "contact-img1.png", class:'contact--photo__img'
+        figure.contact--photo__img
+          =image_tag "contact-img.png", class:''
+          figcaption 大崎
+        figure.contact--photo__img
+          =image_tag "contact-img1.png", class:''
+          figcaption 姉川
       .contact--save.star
         |保 存
 
@@ -291,16 +305,31 @@ section.container.modal#my_modal
           span 電話
           span 03-3333-3333
         li
-          span 担当者：
-          span 大崎　姉川 
+          span 代表取締役：
+          span 赤砂慎太郎 
         li
           span 昭和47年設立　
           span 資本金 2000万円
+        li
+          span 主要業務：
+          span 屋上防水　外壁防水　防水調査・診断　漏水診断　外壁診断
         li          
           span 従業員：
           span ２０名　
+        li.office-data--qualification
+          span 資格：
+          span
+            |防水施工技能士1級　
+            br/
+            |防水施工技能士2級
+            br/
+            |１級建築施工管理技士　
+            br/
+            |２級建築施工管理技士
         li
           span 営業所：
+      .office-data__captal-series
+        span 資本・系列：
       .office-data__proposal
         span 許認可：
       .office-data__member

@@ -18,8 +18,8 @@
       padding: 8px 5px
       border-radius: 3px
 
-  label
-    font-weight: normal
+  .label
+    font-weight: bold
     line-height: 18px 
     color: #B1B1B1
     font-size: 18px
@@ -40,6 +40,7 @@
         @include span-columns(8)
         @include shift(1)
   &--size
+    margin-bottom: 24px
     &-group
       @include outer-container
 
@@ -59,5 +60,13 @@
         background: $light-gray
         color: #fff
         margin-right: 0
-
+  &--area
+    &-places
+      span
+        color: #B1B1B1
+        font-size: 16px
+        margin-right: 10px
+        &:last-of-type
+          margin-right: 0
+     
 
