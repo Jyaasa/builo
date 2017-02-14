@@ -31,7 +31,7 @@
 
 .companies{
   background: #9D9D9D;
-  @include pad (1em 14px);
+  @include pad (1em 0);
   h4{
     color: #fff;
     font-weight: normal;
@@ -40,9 +40,12 @@
     @include outer-container;
   }
   li.block{
-    @include size (20% auto);
-    @include pad(0 10px);
-    float: left;
+    @include size (18.9% auto);
+    @include margin(0 1.333% 0 0);
+    display: inline-block;
+    &:last-child{
+      margin-right: 0;
+    }    
     img{
       width: 100%;
     }

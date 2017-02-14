@@ -4,7 +4,7 @@
     a{
       color: #fff;
       position: absolute;
-      right: 0;
+      right: -14px;
       bottom: 35px;
       font-size: 18px;
     }
@@ -15,7 +15,7 @@
   line-height: 1.5;
   margin-bottom: $base-spacing;
   padding: 0;
-  max-width: 1130px;
+  max-width: 1200px;
   margin: 0 auto;
   min-height: 220px;
   @include media(max-width $tab-mode) {
@@ -41,10 +41,13 @@
     color:   $white;
     display: block;
     font-weight: normal;
-    padding: ($base-spacing / 3) ($gutter / 3);
+    padding: ($base-spacing / 3) ($gutter / 2.4);
     text-decoration: none;
     font-size: 20px;
-
+    @include media(max-width 1200px){
+      padding: ($base-spacing / 3) ($gutter / 2.5);
+      
+    }
     @include media($tab-mode) {
       border-top: 0;
       display: inline-block;
@@ -81,11 +84,14 @@
       border-right: 2px solid #fff;
       @include padding(0 10px);
       line-height: 20px;
-
-    a{
-      color: #FFFFFF;
-      font-size: 18px;
+      a{
+        color: #FFFFFF;
+        font-size: 18px;
       }
+      &:first-child{
+        padding-left: 0;
+      }
+
     }
 
     @include media($tab-mode) {

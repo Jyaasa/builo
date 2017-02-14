@@ -13,6 +13,8 @@ body {
 
 .container{
   @include outer-container;
+  padding: 0 15px;
+
 }
 
 .category{
@@ -23,11 +25,11 @@ body {
 
 .marekting-info{
   text-align: center;
+  padding-top: 3em;
   h1{
     font-weight: normal;
     line-height: 70px;
     color: #4B4B4B;
-    margin-top: 1em;
     @include media(max-width $bp-large){
       font-size: 40px;
       line-height: 60px;

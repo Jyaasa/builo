@@ -13,10 +13,9 @@ header.navigation {
   .logo {
     float: left;
     max-height: $navigation-height;
-    padding-left: 1em;
     padding-right: 2em;
     @include media (max-width $bp-medium){
-      padding: 0  1em;
+      padding: 0  1em 0 0;
     }
     img {
       max-height: $navigation-height;
@@ -117,6 +116,11 @@ header.navigation {
     text-align: right;
     width: 100%;
     z-index: 9999;
+    &:last-child{
+      a{
+        padding-right: 0;
+      }
+    }
     @include media ($horizontal-bar-mode) {
       background: transparent;
       display: inline;
