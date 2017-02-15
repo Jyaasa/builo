@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require header
 //= require tab
+//= require ckeditor/init
 //= require_tree .
