@@ -6,7 +6,6 @@
     border-right: 1px solid $border-color;
     @include span-columns(3);
     @include omega();
-    min-height: 1400px;
     position: relative;
     .search-fields{
       padding: 0px 20px 0px 20px;      
