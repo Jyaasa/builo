@@ -19,4 +19,6 @@ class Company < ApplicationRecord
   validates_presence_of :name, :characteristic, :strengths, :greeting,
                         :prior_explanation, :construction_policy,
                         :upon_completion, :after_support_policy
+
+  mount_uploader :banner, ImageUploader
 end

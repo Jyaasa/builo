@@ -21,6 +21,7 @@
 /config/database.yml
 /config/secrets.yml
 /db/schema.rb
+/public/uploads
 
 # Ignore Byebug command history file.
 .byebug_history

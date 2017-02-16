@@ -20,7 +20,7 @@ section.container.modal#my_modal
     section.about
       .about--heading
         .about--heading-logo
-          =image_tag"company-logo.png"
+          =image_tag @company.banner.url(:logo)
         .about--heading-name
           h1
             = @company.name

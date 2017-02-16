@@ -1,5 +1,5 @@
-- @companies.each do |company|
-  section.company-search-list
+section.company-search-list
+  - @companies.each do |company|
     section.company-item data-link="/companies/#{company.id}"
       section.company-item-details
         section.company-item-details-wrapper

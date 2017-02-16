@@ -1,0 +1,39 @@
+class AddFieldsToCompanies < ActiveRecord::Migration[5.0]
+  def change
+    add_column :companies, :banner, :string
+    add_column :companies, :logo, :string
+    add_column :companies, :category_1, :string
+    add_column :companies, :category_2, :string
+    add_column :companies, :category_3, :string
+    add_column :companies, :category_4, :string
+    add_column :companies, :business_areaes, :text
+    add_column :companies, :business_day_no, :integer
+    add_column :companies, :inquiry_member_image1, :string
+    add_column :companies, :inquiry_member_image2, :string
+    add_column :companies, :url, :string
+    add_column :companies, :address, :string
+    add_column :companies, :telephone, :string
+    add_column :companies, :president, :string
+    add_column :companies, :about_president, :string
+    add_column :companies, :main_business, :string
+    add_column :companies, :employees, :string
+    add_column :companies, :eligibility, :text
+    add_column :companies, :ei_industry_are, :string
+    add_column :companies, :capital_series, :string
+    add_column :companies, :permit, :string
+    add_column :companies, :member_organizations, :string
+    add_column :companies, :major_customers, :string
+    add_column :companies, :performance_content1, :string
+    add_column :companies, :performance_content2, :string
+    add_column :companies, :performance_content3, :string
+    add_column :companies, :performance_content4, :string
+    add_column :companies, :performance_content5, :string
+    add_column :companies, :performance_content6, :string
+    add_column :companies, :performance_image1, :string
+    add_column :companies, :performance_image2, :string
+    add_column :companies, :performance_image3, :string
+    add_column :companies, :performance_image4, :string
+    add_column :companies, :performance_image5, :string
+    add_column :companies, :performance_image6, :string
+  end
+end
