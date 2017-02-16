@@ -14,6 +14,8 @@ gem "exception_notification",
    :git => "git://github.com/rails/exception_notification.git",
    :require => "exception_notifier"
 
+gem 'dotenv-rails', '~> 2.1.1'
+
 gem "slim-rails"
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18.4'
