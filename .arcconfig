@@ -2,5 +2,6 @@
   "phabricator.uri" : "http://phabricator.jyaasa.com/",
   "phabricator.callsign": "BUILO",
   "arc.land.onto.default": "master",
-  "base": "git:merge-base(origin/master), arc:prompt"
+  "base": "git:merge-base(origin/master), arc:prompt",
+  "base": "git:merge-base(git-hub/master), arc:prompt"
 }

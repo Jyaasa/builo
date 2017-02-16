@@ -2,6 +2,8 @@ ActiveAdmin.register Company do
   permit_params :comany_name, :characteristic, :strengths, :greeting, :prior_explanation,
                 :construction_policy, :upon_completion, :after_support_policy
 
+  actions :all
+
   index do
     column :id
     column :comany_name
@@ -12,6 +14,7 @@ ActiveAdmin.register Company do
     column :construction_policy
     column :upon_completion
     column :after_support_policy
+    actions
   end
 
   form do |f|
@@ -28,4 +31,16 @@ ActiveAdmin.register Company do
     actions
   end
 
+  show do
+    attributes_table do
+      row :comany_name
+      row :characteristic
+      row :strengths
+      row :greeting
+      row :prior_explanation
+      row :construction_policy
+      row :upon_completion
+      row :after_support_policy
+    end
+  end
 end
