@@ -26,6 +26,18 @@ class ImageUploader < CarrierWave::Uploader::Base
     process resize_to_fill: [80, 80]
   end
 
+  version :banner do
+    process resize_to_fill: [1170, 300]
+  end
+
+  version :inquiry_member do
+    process resize_to_fill: [50, 50]
+  end
+
+  version :performance_image do
+    process resize_to_fill: [556, 572]
+  end
+
   def extension_white_list
     %w(jpg jpeg png)
   end

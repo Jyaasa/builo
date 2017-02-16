@@ -1,7 +1,15 @@
 ActiveAdmin.register Company do
   permit_params :name, :characteristic, :strengths, :greeting, :prior_explanation,
                 :construction_policy, :upon_completion, :after_support_policy,
-                :banner
+                :banner, :logo, :category_1, :category_2, :category_3, :category_4,
+                :business_areaes, :business_day_no, :inquiry_member_image1,
+                :inquiry_member_image2, :url, :address, :telephone, :president,
+                :about_president, :main_business, :employees, :eligibility, :ei_industry_are,
+                :capital_series, :permit, :member_organizations, :major_customers,
+                :performance_content1, :performance_content2, :performance_content3,
+                :performance_content4, :performance_content5, :performance_content6,
+                :performance_image1, :performance_image2, :performance_image3,
+                :performance_image4, :performance_image5, :performance_image6
 
   actions :all
 
