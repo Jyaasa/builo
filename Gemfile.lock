@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/rails/exception_notification.git
+  revision: 192a49a02d63d28b23ed41cebadfedd490929cf1
+  specs:
+    exception_notification (1.0.0)
+
+GIT
   remote: https://github.com/activeadmin/activeadmin.git
   revision: 66b74fb9c08f5d6d11b0bf18dab33727f71e8ab1
   specs:
@@ -110,9 +116,6 @@ GEM
       responders
       warden (~> 1.2.3)
     erubis (2.7.0)
-    exception_notification (4.2.1)
-      actionmailer (>= 4.0, < 6)
-      activesupport (>= 4.0, < 6)
     execjs (2.7.0)
     ffi (1.9.17)
     formtastic (3.1.4)
@@ -286,7 +289,7 @@ DEPENDENCIES
   ckeditor (~> 4.1.6)
   coffee-rails (~> 4.2)
   devise
-  exception_notification (~> 4.2.1)
+  exception_notification!
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)

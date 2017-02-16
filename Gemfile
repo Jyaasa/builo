@@ -10,7 +10,9 @@ end
 gem 'rails', '~> 5.0.1'
 
 gem 'annotate', '~> 2.6.5'
-gem 'exception_notification', '~> 4.2.1'
+gem "exception_notification",
+   :git => "git://github.com/rails/exception_notification.git",
+   :require => "exception_notifier"
 
 gem "slim-rails"
 # Use postgresql as the database for Active Record
