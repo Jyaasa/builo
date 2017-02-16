@@ -86,7 +86,7 @@ ActiveAdmin.register Company do
       f.input :telephone
       f.input :president
       f.input :about_president, as: :ckeditor
-      f.input :main_business, as: :ckeditor
+      f.input :main_business
       f.input :employees
       f.input :eligibility, as: :ckeditor
       f.input :ei_industry_are
