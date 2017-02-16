@@ -1,10 +1,16 @@
 .container
-  section.breadcrum  
-    =link_to "専門業者のご紹介", "#" 
-    | > 
-    = link_to "分野別", "#"
-    | > 
-    = link_to "屋上防水", "#"
+  .company_banner
+    .breadcrum  
+      =link_to "専門業者のご紹介", "#" 
+      | > 
+      = link_to "分野別", "#"
+      | > 
+      = link_to "屋上防水", "#"
+    figure
+      =image_tag "top-detail-img.png"
+
+    
+
 section.container.modal#my_modal
   section.company-detail
     section.content-nav
