@@ -59,6 +59,9 @@ GEM
       tzinfo (~> 1.1)
     airbrussh (1.1.1)
       sshkit (>= 1.6.1, != 1.7.0)
+    annotate (2.6.5)
+      activerecord (>= 2.3.0)
+      rake (>= 0.8.7)
     arbre (1.1.1)
       activesupport (>= 3.0.0)
     arel (7.1.4)
@@ -107,6 +110,9 @@ GEM
       responders
       warden (~> 1.2.3)
     erubis (2.7.0)
+    exception_notification (4.2.1)
+      actionmailer (>= 4.0, < 6)
+      activesupport (>= 4.0, < 6)
     execjs (2.7.0)
     ffi (1.9.17)
     formtastic (3.1.4)
@@ -270,6 +276,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin!
+  annotate (~> 2.6.5)
   bourbon (~> 4.2.7)
   byebug
   capistrano (= 3.5.0)
@@ -279,6 +286,7 @@ DEPENDENCIES
   ckeditor (~> 4.1.6)
   coffee-rails (~> 4.2)
   devise
+  exception_notification (~> 4.2.1)
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)

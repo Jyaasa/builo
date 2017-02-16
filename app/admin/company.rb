@@ -1,12 +1,12 @@
 ActiveAdmin.register Company do
-  permit_params :comany_name, :characteristic, :strengths, :greeting, :prior_explanation,
+  permit_params :name, :characteristic, :strengths, :greeting, :prior_explanation,
                 :construction_policy, :upon_completion, :after_support_policy
 
   actions :all
 
   index do
     column :id
-    column :comany_name
+    column :name
     column :characteristic
     column :strengths
     column :greeting
@@ -19,7 +19,7 @@ ActiveAdmin.register Company do
 
   form do |f|
     f.inputs do
-      f.input :comany_name
+      f.input :name
       f.input :characteristic, as: :ckeditor
       f.input :strengths, as: :ckeditor
       f.input :greeting, as: :ckeditor
@@ -33,7 +33,7 @@ ActiveAdmin.register Company do
 
   show do
     attributes_table do
-      row :comany_name
+      row :name
       row :characteristic
       row :strengths
       row :greeting
