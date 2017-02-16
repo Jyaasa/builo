@@ -1,0 +1,347 @@
+.container
+  section.breadcrum  
+    =link_to "専門業者のご紹介", "#" 
+    | > 
+    = link_to "分野別", "#"
+    | > 
+    = link_to "屋上防水", "#"
+section.container.modal#my_modal
+  section.company-detail
+    section.content-nav
+      ul
+        li.nav-link
+          =link_to "概要", "#"
+        li.nav-link
+          =link_to "サポート", "#サポート", data:{turbolinks: 'false'}
+        li.nav-link
+          =link_to "実績", "#実績", data:{turbolinks: 'false'}
+        li.nav-link
+          =link_to "評判", "#評判", data:{turbolinks: 'false'}
+    section.about
+      .about--heading
+        .about--heading-logo
+          =image_tag"company-logo.png"
+        .about--heading-name
+          h1
+            = @company.name
+
+      section.about--company
+        .info
+          .info--label 特徴：
+          .info--description
+            = @company.characteristic.try(:html_safe)
+        .info
+          .info--label 強み：
+          .info--description 
+            = @company.strengths.try(:html_safe)
+        .info
+          .info--label ご挨拶：
+          .info--description 
+            = @company.greeting.try(:html_safe)
+      hr
+    section.policy
+      a name="サポート"
+      h3 工事・サポート方針
+      .policy--detail
+        ul.policy--detail__item.cost
+          li
+            span 見積り作成
+            span 無料　
+          li
+            span 契約の説明
+            span 無料
+          li
+            span 保証の説明
+            span 無料
+        ul.policy--detail__item
+          li 
+            | 提案力　
+            span.sm-circle
+          li 
+            |近隣挨拶　
+            span.sm-circle
+          li 
+            |入居者挨拶　
+            span.sm-circle 
+        ul.policy--detail__item
+          li 
+            | 夜間週末対応
+            span.sm-circle
+          li 
+            | 緊急対応
+            span.sm-circle
+          li 
+            | 分割支払い　
+            span.sm-circle
+      
+      .policy--document
+        .info 
+          .info--label 事前説明：
+          .info--description
+            = @company.prior_explanation.try(:html_safe)
+        .info
+          .info--label 工事方針：
+          .info--description
+            = @company.construction_policy.try(:html_safe)
+        .info
+          .info--label 完了時：
+          .info--description
+            = @company.upon_completion.try(:html_safe)
+        .info
+          .info--label アフターサポート方針：
+          .info--description 
+            = @company.after_support_policy.try(:html_safe)
+    section.contact
+      .contact--action
+        button.contact--btn 問い合わせ
+        .contact--info
+          small 返答目安：１営業日以内
+      .contact--save.star
+        |保 存
+    section.performance
+      a name="実績"
+      .performance--title
+        | 実績
+      .performance--photos.photos
+        ul
+          li.block
+            .photos--title
+              | 築40年屋上防水及び鉄部塗塗装
+            =image_tag "building.png", class: 'photos--image'
+          li.block
+            .photos--title
+              | 築50年屋上防水及び鉄部塗装　外壁洗浄
+            =image_tag "building-img2.png", class: 'photos--image'
+          li.block
+            .photos--title
+              | 築15年屋上防水及び外壁塗装
+            =image_tag "building-img3.png", class: 'photos--image'
+          li.block
+            .photos--title
+              | 築48年屋上防水
+            =image_tag "building-img4.png", class: 'photos--image'
+          li.block
+            .photos--title
+              | 築20年屋上防水及び外壁洗浄
+            =image_tag "building-img5.png", class: 'photos--image'
+          li.block
+            .photos--title
+              | 築25年屋上防水及び塔屋修繕
+            =image_tag "building-img6.png", class: 'photos--image'             
+        
+        .more
+          =link_to "もっと写真を見る", ""
+    section.diagram
+      fiture.diagram--chart
+        figcaption.diagram--chart__title
+          |営業地域
+        =image_tag "map-img.png"
+      figure.diagram--chart
+        figcaption.diagram--chart__title
+          |物件規模
+        =image_tag "chart-img1.png"
+      figure.diagram--chart
+        figcaption.diagram--chart__title
+          |工事金額
+        =image_tag "chart-img2.png"
+      
+
+
+    section.contact
+      .contact--action
+        button.contact--btn 問い合わせ
+        .contact--info
+          small 返答目安：１営業日以内
+      .contact--save.star
+        |保 存
+    
+    section.review
+      a name="評判"
+      .review--title
+        |評判 10件　
+        span.review--title__stars
+          span ★★★★★　
+      .review--summery-contents
+        .review--summery
+          .review--type
+            span.review--type__name
+              | 事前に納得できる相談ができた　
+            span.review--type__stars ★★★★★
+          .review--type
+            span.review--type__name
+              | アフターサポートの説明があった
+            span.review--type__stars ★★★★☆　 
+          .review--type
+            span.review--type__name
+              | 見積書の説明はわかりやすかった
+            span.review--type__stars ★★★★☆ 
+          .review--type
+            span.review--type__name
+              |  工事はスケジュール通りだった
+            span.review--type__stars ★★★★☆ 
+          .review--type
+            span.review--type__name
+              |  近隣・入居者への挨拶気遣いは十分だった
+            span.review--type__stars ★★★★☆ 
+          .review--type
+            span.review--type__name
+              |  施工の質は満足できた
+            span.review--type__stars ★★★★☆                    
+          .review--type
+            span.review--type__name
+              |  トラブル（あれば）の対応は適切だった　N/A　 工事報告書はわかりやすかった
+            span.review--type__stars ★★★★☆
+      .reputations
+        .reputation
+          .reputation--info
+            = image_tag "customer-img.png", class: 'reputation--info__user-img'
+            .reputation__name 
+              | 田中建設常務取締役
+              br/  
+              |南善一朗
+          .reputation--feedback
+            .reputation--feedback__title
+              |推薦者
+            .reputation--feedback__detail
+              | あかさ防水工業さんは、当社でも大変お世話になっていす。責任感が強くしっかり仕事をするので安心してお任せしています。自分の仕事には誇りを持って取り組んでくれるので、気持ち良くお願いができる会社です。
+
+        .reputation
+          .reputation--info
+            = image_tag "customer-img2.png", class: 'reputation--info__user-img'
+            .reputation__name 
+              | 新橋ビルオーナー
+              br/  
+              |鈴木敏夫
+          .reputation--feedback
+            .reputation--feedback__title
+              |推薦者
+            .reputation--feedback__detail
+              | 先代からずっとあかさ防水工業さんのお世話になっています。昔原因不明の雨漏り事故があった時に、あかさ防水工業さんが直るまで徹底的に付き合ってくれたのが、おつきあいのきっかけでした。それ以来屋上防水はお任せしていますが、時々チェックをしてまだ大丈夫、そろそろという時は理由もわかりやすく説明してくれるので、判断がしやすいですね            
+
+        .reputation
+          .reputation--info
+            = image_tag "customer-img3.png", class: 'reputation--info__user-img'
+            .reputation__name 
+              | セントラルビルオーナー
+              br/  
+              |木村太郎
+          .reputation--feedback
+            .reputation--feedback__detail
+              | いつもお世話になっています。一言でいえば、とても良く見てくれます。工事の前も見積が出来てからも、あそこも気になると何度も見に来ます。終わってからも時々様子を見に来てくれます。今まで一度も後から問題がでたことがありません。
+
+        .reputation
+          .reputation--info
+            = image_tag "customer-img4.png", class: 'reputation--info__user-img'
+            .reputation__name 
+              | 高田マンション
+              br/  
+              |高田悦子
+          .reputation--feedback
+            .reputation--feedback__detail
+              | 先日ビルオでみつけてお願いをしました。一言で言えば、良かったです。工事前の説明が丁寧なことはもちろん、工事中もみなさん毎日挨拶が元気で丁寧で、感心しました。入居者にももちろん評判が良かったです。
+        
+        .reputation--more
+          =link_to "他のオーナーの評判を見る", "#"
+          
+      section.contact
+        .contact--action
+          button.contact--btn 問い合わせ
+          .contact--info
+            small 返答目安：１営業日以内
+        .contact--save.star
+          |保 存
+  section.company-infomation
+    .building
+      .building--type
+        .building--type__btn
+          |屋上防水
+        .building--type__btn
+          |外壁塗装
+      .building--target
+        label.building--target__label.label 対象建物
+        .building--target__tag-group
+          .building--target__tag
+            |ビル
+          .building--target__tag
+            |マンション
+      .building--size
+        label.building--target__label.label 対象建物
+        .building--size-group
+          .building--size__type
+            |小
+            br/
+            |規模
+          .building--size__type
+            |中
+            br/
+            |規模
+          .building--size__type
+            |大
+            br/
+            |規模
+      .building--area
+        .building--area-label
+          label.label 営業地域
+        .building--area-places
+          span 東京都
+          span 神奈川県、
+          span 埼玉県一部
+
+    .contact
+      .contact--action
+        button.contact--btn 問い合わせ
+        .contact--info
+          small 私たちが１営業日以内に返信します
+      .contact--photo
+        figure.contact--photo__img
+          =image_tag "contact-img.png", class:''
+          figcaption 大崎
+        figure.contact--photo__img
+          =image_tag "contact-img1.png", class:''
+          figcaption 姉川
+      .contact--save.star
+        |保 存
+
+    .office-data
+      h3 会社データ
+      ul 
+        li 
+          =link_to "http://www.marumarubo-sui.co.jp", "#"
+        li
+          span 東京都品川区品川11-11-11 TTTビル
+        li
+          span 電話
+          span 03-3333-3333
+        li
+          span 代表取締役：
+          span 赤砂慎太郎 
+        li
+          span 昭和47年設立　
+          span 資本金 2000万円
+        li
+          span 主要業務：
+          span 屋上防水　外壁防水　防水調査・診断　漏水診断　外壁診断
+        li          
+          span 従業員：
+          span ２０名　
+        li.office-data--qualification
+          span 資格：
+          span
+            |防水施工技能士1級　
+            br/
+            |防水施工技能士2級
+            br/
+            |１級建築施工管理技士　
+            br/
+            |２級建築施工管理技士
+        li
+          span 営業所：
+      .office-data__captal-series
+        span 資本・系列：
+      .office-data__proposal
+        span 許認可：
+      .office-data__member
+        span 加盟団体：
+      .office-data__key
+        span 主要顧客：
+  = render 'shared/popup'

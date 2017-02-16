@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/categories' => 'pages#categories'
   get '/search' => 'pages#search'
   get '/company/show' => 'pages#show'
+  resources :companies, only: [:index, :show]
 end
