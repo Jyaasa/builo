@@ -12,18 +12,18 @@ section.company-search-list
               =link_to '太陽発電', '#' , class: 'btn btn--primary'
             .company-info--group
               section.company-info--building-type
-                = link_to 'ビル', "#", class: 'btn btn-ghost'
-                = link_to 'マンション', "#", class: 'btn btn-ghost'
+                = link_to 'ビル', "#", class: "btn btn-ghost #{company.decorate.chosen(company.building)}"
+                = link_to 'マンション', "#", class: "btn btn-ghost #{company.decorate.chosen(company.mansion)}"
               section.company-info--scale
-                span 
+                span class="#{company.decorate.chosen(company.small_scale)} "
                   | 小
                   br/
                   | 規模
-                span 
+                span class="#{company.decorate.chosen(company.medium_scale)} "
                   | 中
                   br/
                   | 規模
-                span 
+                span class="#{company.decorate.chosen(company.large_scale)} "
                   | 大
                   br/
                   | 規模 

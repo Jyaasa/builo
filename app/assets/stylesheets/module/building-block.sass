@@ -1,3 +1,4 @@
+
 .building
   border: 2px solid $medium-gray
   padding: 5%
@@ -39,6 +40,13 @@
       &:last-of-type
         @include span-columns(8)
         @include shift(1)
+    &__tag.unchose-enable
+      background: $light-gray
+      color: #fff
+      border-color: $medium-gray
+    &__tag.chosen-enable
+      background: transparent
+      color: $action-color
   &--size
     margin-bottom: 24px
     &-group
@@ -47,19 +55,20 @@
     &__type
       float: left
       @include padding(10px 16px)
-      background: transparent
-      border: 1px solid $medium-gray
       text-align: center
-      color: $action-color
       line-height: 24px
       font-size: 18px
+      border: 1px solid $medium-gray
       border-radius: $base-border-radius
       padding: 7px 5px
       @include span-columns(4)
-      &:last-of-type
-        background: $light-gray
-        color: #fff
-        margin-right: 0
+    &__type.chosen-enable
+      background: transparent
+      color: $action-color
+    &__type.unchose-enable
+      background: $light-gray
+      color: #fff
+      border-color: $medium-gray
   &--area
     &-places
       span

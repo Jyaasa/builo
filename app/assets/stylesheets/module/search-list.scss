@@ -64,10 +64,15 @@
               color: #000;
               font-size: 14px;
               @include inline-block;
-              // &.scale{
-              //   border: 1px solid $border-color;
-              //   background-color: rgba(203,203,203,0.22);
-              // }
+            }
+            a.chosen-enable{
+              background: transparent;
+              color: $action-color;
+              }
+            a.unchose-enable{
+              background: $light-gray;
+              color: #fff;
+              border-color: $medium-gray;
             }
           }
           &--scale{
@@ -83,6 +88,15 @@
               border: 1px solid $border-color;
               line-height: 14px;
               text-align: center;
+            }
+            span.chosen-enable{
+              background: transparent;
+              color: $action-color;
+              }
+            span.unchose-enable{
+              background: $light-gray;
+              color: #fff;
+              border-color: $medium-gray;
             }
           }
           &--star{

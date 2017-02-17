@@ -259,16 +259,16 @@ section.container.modal#my_modal
   section.company-infomation
     .building
       .building--type
-        .building--type__btn class="#{@company.decorate.chosen(@company.building)}"
+        .building--type__btn 
           = @company.category_1
-        .building--type__btn class="#{@company.decorate.chosen(@company.mansion)}"
+        .building--type__btn 
           = @company.category_2
       .building--target
         label.building--target__label.label 対象建物
         .building--target__tag-group
-          .building--target__tag
+          .building--target__tag class="#{@company.decorate.chosen(@company.building)}"
             |ビル
-          .building--target__tag
+          .building--target__tag class="#{@company.decorate.chosen(@company.mansion)}"
             |マンション
       .building--size
         label.building--target__label.label 対象建物
