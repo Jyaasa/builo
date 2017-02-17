@@ -17,6 +17,9 @@ gem "exception_notification",
 gem 'dotenv-rails', '~> 2.1.1'
 gem 'carrierwave', '~> 1.0'
 
+gem 'activemodel-serializers-xml', github: 'rails/activemodel-serializers-xml'
+gem 'draper', github: 'audionerd/draper', branch: 'rails5'
+
 gem "slim-rails"
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18.4'

@@ -259,9 +259,9 @@ section.container.modal#my_modal
   section.company-infomation
     .building
       .building--type
-        .building--type__btn
+        .building--type__btn class="#{@company.decorate.chosen(@company.building)}"
           = @company.category_1
-        .building--type__btn
+        .building--type__btn class="#{@company.decorate.chosen(@company.mansion)}"
           = @company.category_2
       .building--target
         label.building--target__label.label 対象建物
@@ -273,15 +273,15 @@ section.container.modal#my_modal
       .building--size
         label.building--target__label.label 対象建物
         .building--size-group
-          .building--size__type
+          .building--size__type class="#{@company.decorate.chosen(@company.small_scale)}"
             |小
             br/
             |規模
-          .building--size__type
+          .building--size__type class="#{@company.decorate.chosen(@company.medium_scale)}"
             |中
             br/
             |規模
-          .building--size__type
+          .building--size__type class="#{@company.decorate.chosen(@company.large_scale)}"
             |大
             br/
             |規模

@@ -9,7 +9,8 @@ ActiveAdmin.register Company do
                 :performance_content1, :performance_content2, :performance_content3,
                 :performance_content4, :performance_content5, :performance_content6,
                 :performance_image1, :performance_image2, :performance_image3,
-                :performance_image4, :performance_image5, :performance_image6
+                :performance_image4, :performance_image5, :performance_image6,
+                :building, :mansion, :small_scale, :medium_scale, :large_scale
 
   actions :all
 
@@ -29,6 +30,11 @@ ActiveAdmin.register Company do
     column :category_2
     column :category_3
     column :category_4
+    column :building
+    column :mansion
+    column :small_scale
+    column :medium_scale
+    column :large_scale
     column :business_areaes
     column :business_day_no
     column :inquiry_member_image1
@@ -77,6 +83,11 @@ ActiveAdmin.register Company do
       f.input :category_2
       f.input :category_3
       f.input :category_4
+      f.input :building
+      f.input :mansion
+      f.input :small_scale
+      f.input :medium_scale
+      f.input :large_scale
       f.input :business_areaes, as: :ckeditor
       f.input :business_day_no
       f.input :inquiry_member_image1, as: :file
@@ -126,6 +137,11 @@ ActiveAdmin.register Company do
       row :category_2
       row :category_3
       row :category_4
+      row :building
+      row :mansion
+      row :small_scale
+      row :medium_scale
+      row :large_scale
       row :business_areaes
       row :business_day_no
       row :inquiry_member_image1
