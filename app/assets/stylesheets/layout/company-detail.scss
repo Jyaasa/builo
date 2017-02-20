@@ -187,12 +187,20 @@
   .review{
     &--title{
       font-size: 18px;
+      margin-top: 20px;
       &__stars{
         color: #00888B;
+        img{
+          width: 18px;
+        }
+        img:not(:first-child){
+          margin-left: -2px;
+        }
       }
     }
     &--summery-contents{
       @include outer-container;
+      margin-top: 10px;
     }
     &--summery{
       @include span-columns(10);
@@ -201,7 +209,7 @@
       padding-bottom: 40px;
     }
     &--type{
-      font-size: 15px;
+      font-size: 14px;
       color: #8B8B8B;
       line-height: 26px;
       @include span-columns(6);
@@ -210,6 +218,18 @@
         display: block;
         width: 100%;
       }  
+      &:nth-child(5){
+        width: 55%;
+      }
+      &:nth-child(6){
+        width: 40%;
+      }      
+      img{
+        width: 18px;
+      }
+      img:not(:first-child){
+        margin-left: -2px;
+      }
     }
   }
   .reputation{
@@ -224,19 +244,19 @@
       }
     }
     &__name{
-      font-size: 16px;
-      line-height: 26px;
+      font-size: 14px;
+      line-height: 18px;
     }
     &--feedback{
       @include span-columns(10);
       padding-top: 2%;
-      min-height: 200px;
+      min-height: 170px;
       border-bottom: 2px solid #ddd;
       &__title{
         font-size: 18px;
       }
       &__detail{
-        font-size: 16px;
+        font-size: 14px;
       }
     }
     &--more{
