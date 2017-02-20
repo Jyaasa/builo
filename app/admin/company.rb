@@ -73,8 +73,8 @@ ActiveAdmin.register Company do
     column :after_sales_support_rate
     column :estimate_understand_rate
     column :construction_schedule_rate
+    column :greeting_residents_concern_adequate_rate
     column :quality_construction_satisfactory_rate
-    column :residents_care_rate
     column :construction_report_understand_rate
     actions
   end
@@ -134,8 +134,8 @@ ActiveAdmin.register Company do
       f.input :after_sales_support_rate
       f.input :estimate_understand_rate
       f.input :construction_schedule_rate
+      f.input :greeting_residents_concern_adequate_rate
       f.input :quality_construction_satisfactory_rate
-      f.input :residents_care_rate
       f.input :construction_report_understand_rate
     end
     actions
@@ -199,8 +199,8 @@ ActiveAdmin.register Company do
       row :after_sales_support_rate
       row :estimate_understand_rate
       row :construction_schedule_rate
+      row :greeting_residents_concern_adequate_rate
       row :quality_construction_satisfactory_rate
-      row :residents_care_rate
       row :construction_report_understand_rate
     end
   end
