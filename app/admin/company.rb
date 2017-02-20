@@ -10,7 +10,11 @@ ActiveAdmin.register Company do
                 :performance_content4, :performance_content5, :performance_content6,
                 :performance_image1, :performance_image2, :performance_image3,
                 :performance_image4, :performance_image5, :performance_image6,
-                :building, :mansion, :small_scale, :medium_scale, :large_scale
+                :building, :mansion, :small_scale, :medium_scale, :large_scale,
+                :reputation_rate, :consult_rate, :after_sales_support_rate,
+                :estimate_understand_rate, :construction_schedule_rate,
+                :quality_construction_satisfactory_rate, :residents_care_rate,
+                :construction_report_understand_rate
 
   actions :all
 
@@ -64,6 +68,14 @@ ActiveAdmin.register Company do
     column :performance_image4
     column :performance_image5
     column :performance_image6
+    column :reputation_rate
+    column :consult_rate
+    column :after_sales_support_rate
+    column :estimate_understand_rate
+    column :construction_schedule_rate
+    column :quality_construction_satisfactory_rate
+    column :residents_care_rate
+    column :construction_report_understand_rate
     actions
   end
 
@@ -117,12 +129,23 @@ ActiveAdmin.register Company do
       f.input :performance_image4, as: :file
       f.input :performance_image5, as: :file
       f.input :performance_image6, as: :file
+      f.input :reputation_rate
+      f.input :consult_rate
+      f.input :after_sales_support_rate
+      f.input :estimate_understand_rate
+      f.input :construction_schedule_rate
+      f.input :quality_construction_satisfactory_rate
+      f.input :residents_care_rate
+      f.input :construction_report_understand_rate
     end
     actions
   end
 
   show do
     attributes_table do
+      row 'Actions' do
+        render 'feedback_actions'
+      end
       row :name
       row :characteristic
       row :strengths
@@ -171,6 +194,14 @@ ActiveAdmin.register Company do
       row :performance_image4
       row :performance_image5
       row :performance_image6
+      row :reputation_rate
+      row :consult_rate
+      row :after_sales_support_rate
+      row :estimate_understand_rate
+      row :construction_schedule_rate
+      row :quality_construction_satisfactory_rate
+      row :residents_care_rate
+      row :construction_report_understand_rate
     end
   end
 end

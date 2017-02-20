@@ -102,7 +102,7 @@ section.container.modal#my_modal
         button.contact--btn 問い合わせ
         .contact--info
           small 返答目安：#{@company.business_day_no}営業日以内
-      .contact--save.star
+      .contact--save.star-1
         |保 存
     section.performance
       a name="実績"
@@ -158,7 +158,7 @@ section.container.modal#my_modal
         button.contact--btn 問い合わせ
         .contact--info
           small 返答目安：１営業日以内
-      .contact--save.star
+      .contact--save.star-1
         |保 存
     
     section.review
@@ -166,37 +166,37 @@ section.container.modal#my_modal
       .review--title
         |評判 10件　
         span.review--title__stars
-          span ★★★★★　
+          span #{show_rating(@company.reputation_rate)}　
       .review--summery-contents
         .review--summery
           .review--type
             span.review--type__name
               | 事前に納得できる相談ができた　
-            span.review--type__stars ★★★★★
+            span.review--type__stars #{show_rating(@company.consult_rate)}
           .review--type
             span.review--type__name
               | アフターサポートの説明があった
-            span.review--type__stars ★★★★☆　 
+            span.review--type__stars #{show_rating(@company.after_sales_support_rate)} 
           .review--type
             span.review--type__name
               | 見積書の説明はわかりやすかった
-            span.review--type__stars ★★★★☆ 
+            span.review--type__stars #{show_rating(@company.estimate_understand_rate)}
           .review--type
             span.review--type__name
               |  工事はスケジュール通りだった
-            span.review--type__stars ★★★★☆ 
+            span.review--type__stars #{show_rating(@company.construction_schedule_rate)}
           .review--type
             span.review--type__name
               |  近隣・入居者への挨拶気遣いは十分だった
-            span.review--type__stars ★★★★☆ 
+            span.review--type__stars #{show_rating(@company.greeting_residents_concern_adequate_rate)}
           .review--type
             span.review--type__name
               |  施工の質は満足できた
-            span.review--type__stars ★★★★☆                    
+            span.review--type__stars #{show_rating(@company.quality_construction_satisfactory_rate)}                    
           .review--type
             span.review--type__name
               |  トラブル（あれば）の対応は適切だった　N/A　 工事報告書はわかりやすかった
-            span.review--type__stars ★★★★☆
+            span.review--type__stars #{show_rating(@company.construction_report_understand_rate)} 
       .reputations
         .reputation
           .reputation--info
@@ -254,7 +254,7 @@ section.container.modal#my_modal
           button.contact--btn 問い合わせ
           .contact--info
             small 返答目安：１営業日以内
-        .contact--save.star
+        .contact--save.star-1
           |保 存
   section.company-infomation
     .building
@@ -302,7 +302,7 @@ section.container.modal#my_modal
         figure.contact--photo__img
           =image_tag @company.company_inquiry_member_image2, class:''
           figcaption 姉川
-      .contact--save.star
+      .contact--save.star-1
         |保 存
 
     .office-data

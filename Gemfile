@@ -19,6 +19,7 @@ gem 'carrierwave', '~> 1.0'
 
 gem 'activemodel-serializers-xml', github: 'rails/activemodel-serializers-xml'
 gem 'draper', github: 'audionerd/draper', branch: 'rails5'
+gem 'ratyrate', '~> 1.2.2.alpha'
 
 gem "slim-rails"
 # Use postgresql as the database for Active Record

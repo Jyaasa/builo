@@ -2,58 +2,73 @@
 #
 # Table name: companies
 #
-#  id                    :integer          not null, primary key
-#  name                  :string
-#  characteristic        :text
-#  strengths             :text
-#  greeting              :text
-#  prior_explanation     :text
-#  construction_policy   :text
-#  upon_completion       :text
-#  after_support_policy  :text
-#  created_at            :datetime         not null
-#  updated_at            :datetime         not null
-#  banner                :string
-#  logo                  :string
-#  category_1            :string
-#  category_2            :string
-#  category_3            :string
-#  category_4            :string
-#  business_areaes       :text
-#  business_day_no       :integer
-#  inquiry_member_image1 :string
-#  inquiry_member_image2 :string
-#  url                   :string
-#  address               :string
-#  telephone             :string
-#  president             :string
-#  about_president       :string
-#  main_business         :string
-#  employees             :string
-#  eligibility           :text
-#  ei_industry_are       :string
-#  capital_series        :string
-#  permit                :string
-#  member_organizations  :string
-#  major_customers       :string
-#  performance_content1  :string
-#  performance_content2  :string
-#  performance_content3  :string
-#  performance_content4  :string
-#  performance_content5  :string
-#  performance_content6  :string
-#  performance_image1    :string
-#  performance_image2    :string
-#  performance_image3    :string
-#  performance_image4    :string
-#  performance_image5    :string
-#  performance_image6    :string
+#  id                                       :integer          not null, primary key
+#  name                                     :string
+#  characteristic                           :text
+#  strengths                                :text
+#  greeting                                 :text
+#  prior_explanation                        :text
+#  construction_policy                      :text
+#  upon_completion                          :text
+#  after_support_policy                     :text
+#  created_at                               :datetime         not null
+#  updated_at                               :datetime         not null
+#  banner                                   :string
+#  logo                                     :string
+#  category_1                               :string
+#  category_2                               :string
+#  category_3                               :string
+#  category_4                               :string
+#  business_areaes                          :text
+#  business_day_no                          :integer
+#  inquiry_member_image1                    :string
+#  inquiry_member_image2                    :string
+#  url                                      :string
+#  address                                  :string
+#  telephone                                :string
+#  president                                :string
+#  about_president                          :string
+#  main_business                            :string
+#  employees                                :string
+#  eligibility                              :text
+#  ei_industry_are                          :string
+#  capital_series                           :string
+#  permit                                   :string
+#  member_organizations                     :string
+#  major_customers                          :string
+#  performance_content1                     :string
+#  performance_content2                     :string
+#  performance_content3                     :string
+#  performance_content4                     :string
+#  performance_content5                     :string
+#  performance_content6                     :string
+#  performance_image1                       :string
+#  performance_image2                       :string
+#  performance_image3                       :string
+#  performance_image4                       :string
+#  performance_image5                       :string
+#  performance_image6                       :string
+#  building                                 :boolean          default("false")
+#  mansion                                  :boolean          default("false")
+#  small_scale                              :boolean          default("false")
+#  medium_scale                             :boolean          default("false")
+#  large_scale                              :boolean          default("false")
+#  reputation_rate                          :integer          default("0")
+#  consult_rate                             :integer          default("0")
+#  after_sales_support_rate                 :integer          default("0")
+#  estimate_understand_rate                 :integer          default("0")
+#  construction_schedule_rate               :integer
+#  greeting_residents_concern_adequate_rate :integer          default("0")
+#  quality_construction_satisfactory_rate   :integer          default("0")
+#  construction_report_understand_rate      :integer          default("0")
 #
 
 class Company < ApplicationRecord
   validates_presence_of :name, :characteristic, :strengths, :greeting,
                         :prior_explanation, :construction_policy,
                         :upon_completion, :after_support_policy
+
+  has_many :feedbacks
 
   mount_uploader :banner, ImageUploader
   mount_uploader :logo, ImageUploader
