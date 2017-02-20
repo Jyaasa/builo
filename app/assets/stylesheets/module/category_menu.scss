@@ -32,7 +32,7 @@
 }
 .category-menu{
   li{
-    @include padding(null 1em);
+    @include padding(null 0.5em);
     @include inline-block;
     font-size: 18px;
     &:first-of-type{
