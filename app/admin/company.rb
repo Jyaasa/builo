@@ -14,7 +14,7 @@ ActiveAdmin.register Company do
                 :reputation_rate, :consult_rate, :after_sales_support_rate,
                 :estimate_understand_rate, :construction_schedule_rate,
                 :quality_construction_satisfactory_rate, :residents_care_rate,
-                :construction_report_understand_rate
+                :construction_report_understand_rate, :greeting_residents_concern_adequate_rate
 
   actions :all
 
