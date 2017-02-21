@@ -198,54 +198,7 @@ section.container.modal#my_modal
               |  トラブル（あれば）の対応は適切だった　N/A　 工事報告書はわかりやすかった 
             span.review--type__stars #{show_rating(@company.construction_report_understand_rate)} 
       .reputations
-        .reputation
-          .reputation--info
-            = image_tag "customer-img.png", class: 'reputation--info__user-img'
-            .reputation__name 
-              | 田中建設常務取締役
-              br/  
-              |南善一朗
-          .reputation--feedback
-            .reputation--feedback__title
-              |推薦者
-            .reputation--feedback__detail
-              | あかさ防水工業さんは、当社でも大変お世話になっていす。責任感が強くしっかり仕事をするので安心してお任せしています。自分の仕事には誇りを持って取り組んでくれるので、気持ち良くお願いができる会社です。
-
-        .reputation
-          .reputation--info
-            = image_tag "customer-img2.png", class: 'reputation--info__user-img'
-            .reputation__name 
-              | 新橋ビルオーナー
-              br/  
-              |鈴木敏夫
-          .reputation--feedback
-            .reputation--feedback__title
-              |推薦者
-            .reputation--feedback__detail
-              | 先代からずっとあかさ防水工業さんのお世話になっています。昔原因不明の雨漏り事故があった時に、あかさ防水工業さんが直るまで徹底的に付き合ってくれたのが、おつきあいのきっかけでした。それ以来屋上防水はお任せしていますが、時々チェックをしてまだ大丈夫、そろそろという時は理由もわかりやすく説明してくれるので、判断がしやすいですね            
-
-        .reputation
-          .reputation--info
-            = image_tag "customer-img3.png", class: 'reputation--info__user-img'
-            .reputation__name 
-              | セントラルビルオーナー
-              br/  
-              |木村太郎
-          .reputation--feedback
-            .reputation--feedback__detail
-              | いつもお世話になっています。一言でいえば、とても良く見てくれます。工事の前も見積が出来てからも、あそこも気になると何度も見に来ます。終わってからも時々様子を見に来てくれます。今まで一度も後から問題がでたことがありません。
-
-        .reputation
-          .reputation--info
-            = image_tag "customer-img4.png", class: 'reputation--info__user-img'
-            .reputation__name 
-              | 高田マンション
-              br/  
-              |高田悦子
-          .reputation--feedback
-            .reputation--feedback__detail
-              | 先日ビルオでみつけてお願いをしました。一言で言えば、良かったです。工事前の説明が丁寧なことはもちろん、工事中もみなさん毎日挨拶が元気で丁寧で、感心しました。入居者にももちろん評判が良かったです。
-        
+        = render partial: 'feedback_list'
         .reputation--more
           =link_to "他のオーナーの評判を見る", "#"
           

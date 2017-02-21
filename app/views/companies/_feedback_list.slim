@@ -1,0 +1,13 @@
+- @company.feedbacks.each do |feedback|
+  .reputation
+    .reputation--info
+      = image_tag feedback.feedbacker_image, class: 'reputation--info__user-img'
+      .reputation__name 
+        br/  
+        = feedback.feedbacker_details
+    .reputation--feedback
+      .reputation--feedback__title
+        = feedback.title
+      p.reputation--feedback__detail
+        / = feedback.feedbacker_details
+        = feedback.description
