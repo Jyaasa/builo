@@ -195,11 +195,7 @@ section.container.modal#my_modal
             span.review--type__stars #{show_rating(@company.quality_construction_satisfactory_rate)} 
           .review--type
             span.review--type__name
-              |  トラブル（あれば）の対応は適切だった　N/A　
-            span.review--type__stars #{show_rating(@company.correspondence_trouble_appropriate_n_a_rate)}                   
-          .review--type
-            span.review--type__name
-              |  工事報告書はわかりやすかった 
+              |  トラブル（あれば）の対応は適切だった　N/A　 工事報告書はわかりやすかった
             span.review--type__stars #{show_rating(@company.construction_report_understand_rate)} 
       .reputations
         = render partial: 'feedback_list'
