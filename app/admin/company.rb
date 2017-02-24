@@ -14,7 +14,13 @@ ActiveAdmin.register Company do
                 :reputation_rate, :consult_rate, :after_sales_support_rate,
                 :estimate_understand_rate, :construction_schedule_rate,
                 :quality_construction_satisfactory_rate, :residents_care_rate,
-                :construction_report_understand_rate, :greeting_residents_concern_adequate_rate
+                :construction_report_understand_rate, :greeting_residents_concern_adequate_rate,
+                :estimate_create, :description_of_contract, :guarantee_of_description,
+                :proposed_force, :neighborhood_greeting, :greeting_the_home,
+                :corresponding_night_weekend, :emergency_response, :split_payment,
+                :inquiry_member_name1, :inquiry_member_name2, :business_area_image,
+                :property_scale_image, :construction_amount_image,
+                :correspondence_trouble_appropriate_n_a_rate
 
   actions :all
 
@@ -75,7 +81,22 @@ ActiveAdmin.register Company do
     column :construction_schedule_rate
     column :greeting_residents_concern_adequate_rate
     column :quality_construction_satisfactory_rate
+    column :correspondence_trouble_appropriate_n_a_rate
     column :construction_report_understand_rate
+    column :estimate_create
+    column :description_of_contract
+    column :guarantee_of_description
+    column :proposed_force　
+    column :neighborhood_greeting　
+    column :greeting_the_home
+    column :corresponding_night_weekend
+    column :emergency_response
+    column :split_payment
+    column :inquiry_member_name1
+    column :inquiry_member_name2
+    column :business_area_image
+    column :property_scale_image
+    column :construction_amount_image
     actions
   end
 
@@ -136,7 +157,22 @@ ActiveAdmin.register Company do
       f.input :construction_schedule_rate
       f.input :greeting_residents_concern_adequate_rate
       f.input :quality_construction_satisfactory_rate
+      f.input :correspondence_trouble_appropriate_n_a_rate
       f.input :construction_report_understand_rate
+      f.input :estimate_create
+      f.input :description_of_contract
+      f.input :guarantee_of_description
+      f.input :proposed_force
+      f.input :neighborhood_greeting
+      f.input :greeting_the_home
+      f.input :corresponding_night_weekend
+      f.input :emergency_response
+      f.input :split_payment
+      f.input :inquiry_member_name1
+      f.input :inquiry_member_name2
+      f.input :business_area_image, as: :file
+      f.input :property_scale_image, as: :file
+      f.input :construction_amount_image, as: :file
     end
     actions
   end
@@ -201,7 +237,22 @@ ActiveAdmin.register Company do
       row :construction_schedule_rate
       row :greeting_residents_concern_adequate_rate
       row :quality_construction_satisfactory_rate
+      row :correspondence_trouble_appropriate_n_a_rate
       row :construction_report_understand_rate
+      row :estimate_create
+      row :description_of_contract
+      row :guarantee_of_description
+      row :proposed_force　
+      row :neighborhood_greeting　
+      row :greeting_the_home
+      row :corresponding_night_weekend
+      row :emergency_response
+      row :split_payment
+      row :inquiry_member_name1
+      row :inquiry_member_name2
+      row :business_area_image
+      row :property_scale_image
+      row :construction_amount_image
     end
   end
 end

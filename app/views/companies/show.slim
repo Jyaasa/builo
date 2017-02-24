@@ -52,33 +52,33 @@ section.container.modal#my_modal
         ul.policy--detail__item.cost
           li
             span 見積り作成
-            span 無料　
+            span #{@company.estimate_create}
           li
             span 契約の説明
-            span 無料
+            span #{@company.description_of_contract}
           li
             span 保証の説明
-            span 無料
+            span #{@company.guarantee_of_description}
         ul.policy--detail__item
           li 
             | 提案力　
-            span.sm-circle
+            span.sm-circle class= "#{ @company.decorate.status_enable(@company.proposed_force) }"
           li 
             |近隣挨拶　
-            span.sm-circle
+            span.sm-circle class= "#{ @company.decorate.status_enable(@company.neighborhood_greeting) }"
           li 
             |入居者挨拶　
-            span.sm-circle 
+            span.sm-circle class= "#{ @company.decorate.status_enable(@company.greeting_the_home) }"
         ul.policy--detail__item
           li 
             | 夜間週末対応
-            span.sm-circle
+            span.sm-circle class= "#{ @company.decorate.status_enable(@company.corresponding_night_weekend) }"
           li 
             | 緊急対応
-            span.sm-circle
+            span.sm-circle class= "#{ @company.decorate.status_enable(@company.emergency_response) }"
           li 
-            | 分割支払い　
-            span.sm-circle
+            | 現地見学可
+            span.sm-circle class= "#{ @company.decorate.status_enable(@company.split_payment) }"
       
       .policy--document
         .info 
@@ -141,15 +141,15 @@ section.container.modal#my_modal
       fiture.diagram--chart
         figcaption.diagram--chart__title
           |営業地域
-        =image_tag "map-img.png"
+        =image_tag @company.company_business_area_image
       figure.diagram--chart
         figcaption.diagram--chart__title
           |物件規模
-        =image_tag "chart-img1.png"
+        =image_tag @company.company_property_scale_image
       figure.diagram--chart
         figcaption.diagram--chart__title
           |工事金額
-        =image_tag "chart-img2.png"
+        =image_tag @company.company_construction_amount_image
       
 
 
@@ -192,10 +192,14 @@ section.container.modal#my_modal
           .review--type
             span.review--type__name
               |  施工の質は満足できた 
-            span.review--type__stars #{show_rating(@company.quality_construction_satisfactory_rate)}                    
+            span.review--type__stars #{show_rating(@company.quality_construction_satisfactory_rate)} 
           .review--type
             span.review--type__name
-              |  トラブル（あれば）の対応は適切だった　N/A　 工事報告書はわかりやすかった 
+              |  トラブル（あれば）の対応は適切だった　N/A　
+            span.review--type__stars #{show_rating(@company.correspondence_trouble_appropriate_n_a_rate)}                   
+          .review--type
+            span.review--type__name
+              |  工事報告書はわかりやすかった 
             span.review--type__stars #{show_rating(@company.construction_report_understand_rate)} 
       .reputations
         = render partial: 'feedback_list'
@@ -251,10 +255,10 @@ section.container.modal#my_modal
       .contact--photo
         figure.contact--photo__img
           =image_tag @company.company_inquiry_member_image1, class:''
-          figcaption 大崎
+          figcaption #{@company.inquiry_member_name1}
         figure.contact--photo__img
           =image_tag @company.company_inquiry_member_image2, class:''
-          figcaption 姉川
+          figcaption #{@company.inquiry_member_name2}
       .contact--save.star-1
         |保 存
 

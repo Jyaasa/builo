@@ -4,4 +4,8 @@ class CompanyDecorator < Draper::Decorator
   def chosen(boolean_value)
     boolean_value == true ? 'chosen-enable' : 'unchose-enable'
   end
+
+  def status_enable(boolean_value)
+    'status-enable' if boolean_value == true
+  end
 end
