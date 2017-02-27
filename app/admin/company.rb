@@ -86,8 +86,8 @@ ActiveAdmin.register Company do
     column :estimate_create
     column :description_of_contract
     column :guarantee_of_description
-    column :proposed_force　
-    column :neighborhood_greeting　
+    column :proposed_force
+    column :neighborhood_greeting
     column :greeting_the_home
     column :corresponding_night_weekend
     column :emergency_response
@@ -110,8 +110,10 @@ ActiveAdmin.register Company do
       f.input :construction_policy, as: :ckeditor
       f.input :upon_completion, as: :ckeditor
       f.input :after_support_policy, as: :ckeditor
-      f.input :banner, as: :file
-      f.input :logo, as: :file
+      f.input :banner, as: :file, hint: f.object.banner.present? \
+        ? image_tag(f.object.banner.url(:logo)) : nil
+      f.input :logo, as: :file, hint: f.object.logo.present? \
+        ? image_tag(f.object.logo.url(:logo)) : nil
       f.input :category_1
       f.input :category_2
       f.input :category_3
@@ -123,8 +125,10 @@ ActiveAdmin.register Company do
       f.input :large_scale
       f.input :business_areaes, as: :ckeditor
       f.input :business_day_no
-      f.input :inquiry_member_image1, as: :file
-      f.input :inquiry_member_image2, as: :file
+      f.input :inquiry_member_image1, hint: f.object.inquiry_member_image1.present? \
+        ? image_tag(f.object.inquiry_member_image1.url(:logo)) : nil
+      f.input :inquiry_member_image2, as: :file, hint: f.object.inquiry_member_image2.present? \
+        ? image_tag(f.object.inquiry_member_image2.url(:logo)) : nil
       f.input :url
       f.input :address
       f.input :telephone
@@ -144,12 +148,18 @@ ActiveAdmin.register Company do
       f.input :performance_content4, as: :ckeditor
       f.input :performance_content5, as: :ckeditor
       f.input :performance_content6, as: :ckeditor
-      f.input :performance_image1, as: :file
-      f.input :performance_image2, as: :file
-      f.input :performance_image3, as: :file
-      f.input :performance_image4, as: :file
-      f.input :performance_image5, as: :file
-      f.input :performance_image6, as: :file
+      f.input :performance_image1, as: :file, hint: f.object.performance_image1.present? \
+        ? image_tag(f.object.performance_image1.url(:logo)) : nil
+      f.input :performance_image2, as: :file, hint: f.object.performance_image2.present? \
+        ? image_tag(f.object.performance_image2.url(:logo)) : nil
+      f.input :performance_image3, as: :file, hint: f.object.performance_image3.present? \
+        ? image_tag(f.object.performance_image3.url(:logo)) : nil
+      f.input :performance_image4, as: :file, hint: f.object.performance_image4.present? \
+        ? image_tag(f.object.performance_image4.url(:logo)) : nil
+      f.input :performance_image5, as: :file, hint: f.object.performance_image5.present? \
+        ? image_tag(f.object.performance_image5.url(:logo)) : nil
+      f.input :performance_image6, as: :file, hint: f.object.performance_image6.present? \
+        ? image_tag(f.object.performance_image6.url(:logo)) : nil
       f.input :reputation_rate
       f.input :consult_rate
       f.input :after_sales_support_rate
@@ -170,9 +180,12 @@ ActiveAdmin.register Company do
       f.input :split_payment
       f.input :inquiry_member_name1
       f.input :inquiry_member_name2
-      f.input :business_area_image, as: :file
-      f.input :property_scale_image, as: :file
-      f.input :construction_amount_image, as: :file
+      f.input :business_area_image, as: :file, hint: f.object.business_area_image.present? \
+        ? image_tag(f.object.business_area_image.url(:logo)) : nil
+      f.input :property_scale_image, as: :file, hint: f.object.property_scale_image.present? \
+        ? image_tag(f.object.property_scale_image.url(:logo)) : nil
+      f.input :construction_amount_image, as: :file, hint: f.object.construction_amount_image.present? \
+        ? image_tag(f.object.construction_amount_image.url(:logo)) : nil
     end
     actions
   end
@@ -242,8 +255,8 @@ ActiveAdmin.register Company do
       row :estimate_create
       row :description_of_contract
       row :guarantee_of_description
-      row :proposed_force　
-      row :neighborhood_greeting　
+      row :proposed_force
+      row :neighborhood_greeting
       row :greeting_the_home
       row :corresponding_night_weekend
       row :emergency_response
