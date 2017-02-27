@@ -34,8 +34,12 @@ ActiveAdmin.register Company do
     column :construction_policy
     column :upon_completion
     column :after_support_policy
-    column :banner
-    column :logo
+    column :banner do |company|
+      image_tag(company.banner.url(:logo)) if company.banner.present?
+    end
+    column :logo do |company|
+      image_tag(company.logo.url(:logo)) if company.logo.present?
+    end
     column :category_1
     column :category_2
     column :category_3
@@ -47,8 +51,14 @@ ActiveAdmin.register Company do
     column :large_scale
     column :business_areaes
     column :business_day_no
-    column :inquiry_member_image1
-    column :inquiry_member_image2
+    column :inquiry_member_image1 do |company|
+      image_tag(company.inquiry_member_image1.url(:logo)) \
+      if company.inquiry_member_image1.present?
+    end
+    column :inquiry_member_image2 do |company|
+      image_tag(company.inquiry_member_image2.url(:logo)) \
+      if company.inquiry_member_image2.present?
+    end
     column :url
     column :address
     column :telephone
@@ -68,12 +78,30 @@ ActiveAdmin.register Company do
     column :performance_content4
     column :performance_content5
     column :performance_content6
-    column :performance_image1
-    column :performance_image2
-    column :performance_image3
-    column :performance_image4
-    column :performance_image5
-    column :performance_image6
+    column :performance_image1 do |company|
+      image_tag(company.performance_image1.url(:logo)) \
+      if company.performance_image1.present?
+    end
+    column :performance_image2 do |company|
+      image_tag(company.performance_image2.url(:logo)) \
+      if company.performance_image2.present?
+    end
+    column :performance_image3 do |company|
+      image_tag(company.performance_image3.url(:logo)) \
+      if company.performance_image3.present?
+    end
+    column :performance_image4 do |company|
+      image_tag(company.performance_image4.url(:logo)) \
+      if company.performance_image4.present?
+    end
+    column :performance_image5 do |company|
+      image_tag(company.performance_image5.url(:logo)) \
+      if company.performance_image5.present?
+    end
+    column :performance_image6 do |company|
+      image_tag(company.performance_image6.url(:logo)) \
+      if company.performance_image6.present?
+    end
     column :reputation_rate
     column :consult_rate
     column :after_sales_support_rate
@@ -94,9 +122,18 @@ ActiveAdmin.register Company do
     column :split_payment
     column :inquiry_member_name1
     column :inquiry_member_name2
-    column :business_area_image
-    column :property_scale_image
-    column :construction_amount_image
+    column :business_area_image do |company|
+      image_tag(company.business_area_image.url(:logo)) \
+      if company.business_area_image.present?
+    end
+    column :property_scale_image do |company|
+      image_tag(company.property_scale_image.url(:logo)) \
+      if company.property_scale_image.present?
+    end
+    column :construction_amount_image do |company|
+      image_tag(company.construction_amount_image.url(:logo)) \
+      if company.construction_amount_image.present?
+    end
     actions
   end
 
@@ -203,8 +240,14 @@ ActiveAdmin.register Company do
       row :construction_policy
       row :upon_completion
       row :after_support_policy
-      row :banner
-      row :logo
+      row :banner do |company|
+        image_tag(company.banner.url(:logo)) \
+        if company.banner.present?
+      end
+      row :logo do |company|
+        image_tag(company.logo.url(:logo)) \
+        if company.logo.present?
+      end
       row :category_1
       row :category_2
       row :category_3
@@ -216,8 +259,14 @@ ActiveAdmin.register Company do
       row :large_scale
       row :business_areaes
       row :business_day_no
-      row :inquiry_member_image1
-      row :inquiry_member_image2
+      row :inquiry_member_image1 do |company|
+        image_tag(company.inquiry_member_image1.url(:logo)) \
+        if company.inquiry_member_image1.present?
+      end
+      row :inquiry_member_image2 do |company|
+        image_tag(company.inquiry_member_image2.url(:logo)) \
+        if company.inquiry_member_image2.present?
+      end
       row :url
       row :address
       row :telephone
@@ -237,12 +286,30 @@ ActiveAdmin.register Company do
       row :performance_content4
       row :performance_content5
       row :performance_content6
-      row :performance_image1
-      row :performance_image2
-      row :performance_image3
-      row :performance_image4
-      row :performance_image5
-      row :performance_image6
+      row :performance_image1 do |company|
+        image_tag(company.performance_image1.url(:logo)) \
+        if company.performance_image1.present?
+      end
+      row :performance_image2 do |company|
+        image_tag(company.performance_image2.url(:logo)) \
+        if company.performance_image2.present?
+      end
+      row :performance_image3 do |company|
+        image_tag(company.performance_image3.url(:logo)) \
+        if company.performance_image3.present?
+      end
+      row :performance_image4 do |company|
+        image_tag(company.performance_image4.url(:logo)) \
+        if company.performance_image4.present?
+      end
+      row :performance_image5 do |company|
+        image_tag(company.performance_image5.url(:logo)) \
+        if company.performance_image5.present?
+      end
+      row :performance_image6 do |company|
+        image_tag(company.performance_image6.url(:logo)) \
+        if company.performance_image6.present?
+      end
       row :reputation_rate
       row :consult_rate
       row :after_sales_support_rate
@@ -263,9 +330,18 @@ ActiveAdmin.register Company do
       row :split_payment
       row :inquiry_member_name1
       row :inquiry_member_name2
-      row :business_area_image
-      row :property_scale_image
-      row :construction_amount_image
+      row :business_area_image do |company|
+        image_tag(company.business_area_image.url(:logo)) \
+        if company.business_area_image.present?
+      end
+      row :property_scale_image do |company|
+        image_tag(company.property_scale_image.url(:logo)) \
+        if company.property_scale_image.present?
+      end
+      row :construction_amount_image do |company|
+        image_tag(company.construction_amount_image.url(:logo)) \
+        if company.construction_amount_image.present?
+      end
     end
   end
 end
