@@ -216,14 +216,13 @@
       @include omega();
       &:last-child{
         display: block;
-        width: 100%;
       }  
       &:nth-child(5){
         width: 55%;
       }
       &:nth-child(6){
         width: 40%;
-      }      
+      }     
       img{
         width: 18px;
       }
